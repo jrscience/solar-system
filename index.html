@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="search_for_life.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">The Search for Life</a>
+    <a href="sun.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">The Sun</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Rocky planets">Rocky planets <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="mercury.html" class="w3-bar-item w3-button">Mercury</a>
+        <a href="venus.html" class="w3-bar-item w3-button">Venus</a>
+        <a href="earth.html" class="w3-bar-item w3-button">Earth</a>
+        <a href="mars.html" class="w3-bar-item w3-button">Mars</a>
+      </div>
+    </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Gas giants">Gas giants <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="jupiter.html" class="w3-bar-item w3-button">Jupiter</a>
+        <a href="saturn.html" class="w3-bar-item w3-button">Saturn</a>
+      </div>
+    </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Ice giants">Ice giants <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="uranus.html" class="w3-bar-item w3-button">Uranus</a>
+        <a href="neptune.html" class="w3-bar-item w3-button">Neptune</a>
+      </div>
+    </div>
+            <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">More <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="dwarf_planets.html" class="w3-bar-item w3-button">Dwarf planets</a>
+        <a href="asteroids.html" class="w3-bar-item w3-button">Asteroids</a>
+        <a href="comets.html" class="w3-bar-item w3-button">Comets</a>
+        <a href="kuiper_belt.html" class="w3-bar-item w3-button">Kuiper Belt</a>
+        <a href="oort_cloud.html" class="w3-bar-item w3-button">Oort Cloud</a>
+        <a href="explanations.html" class="w3-bar-item w3-button">Explanations</a>
+        <a href="external_links.html" class="w3-bar-item w3-button">External links</a>
+      </div>
+    </div>
+
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="search_for_life.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Search for Life</a>
+  <a href="sun.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Sun</a>
+  
+  <a href="mercury.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Mercury</a>
+  <a href="venus.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Venus</a>
+  <a href="earth.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Earth</a>
+  <a href="mars.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Mars</a>
+  
+  <a href="jupiter.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Jupiter</a>
+  <a href="saturn.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Saturn</a>
+  
+  <a href="uranus.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Uranus</a>
+  <a href="neptune.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Neptune</a>
+  
+  <a href="dwarf_planets.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Dwarf planets</a>
+  <a href="asteroids.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Asteroids</a>
+  <a href="comets.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Comets</a>
+  <a href="kuiper_belt.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Kuiper Belt</a>
+  <a href="oort_cloud.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Oort Cloud</a>
+  <a href="explanations.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Explanations</a>
+  <a href="external_links.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">External links</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/gallery/Solar_System_true_color.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>
+The Solar System with planets and moons in true color. Dwarf planets are also included from both the Asteroid Belt and the Kuiper Belt. Distance between them is not to scale. </h3>
+      <p>CactiStaccingCrane, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>, via Wikimedia Commons.</p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/gallery/wispr-big.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Parker Solar Probe Spots Coronal Streamer</h3>
+      <a href="https://solarsystem.nasa.gov/resources/2629/parker-solar-probe-spots-coronal-streamer/?category=solar-system_our-solar-system" target="_blank"><b>Source:</b> NASA/Naval Research Laboratory/Parker Solar Probe</a>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/gallery/PIA22224-16.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Curiosity Tests a New Drill Method on Mars</h3>
+      <a href="https://solarsystem.nasa.gov/resources/734/curiosity-tests-a-new-drill-method-on-mars/?category=solar-system_our-solar-system" target="_blank"><b>Source:</b> NASA/JPL-Caltech/MSSS</a>    
+    </div>
+  </div>
+
+  <!-- Main section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1200px" id="band">
+    <h1 class="w3-wide" style="font-size:60px">WELCOME TO THE SOLAR SYSTEM</h1>
+    <p class="w3-opacity"><i>Welcome home.</i></p>
+    <p class="w3-justify">Here you can learn about the Solar System. Visit each planet to learn more about it in detail, including whether or not life could exist, or be established, there or on one or more of its moons; explore its facts and figures, and view breath-taking images.</p>
+    <br>
+    <p class="w3-justify">
+    <ul>
+    	<li>fact 1</li>
+    	<li>two</li>
+    	<li>three</li>
+    </ul></p>
+  </div>
+  
+<!-- YT Video -->
+<p align="center"><iframe width="750" height="400" src="https://www.youtube.com/embed/zR3Igc3Rhfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

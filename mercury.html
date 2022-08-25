@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mercury</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="search_for_life.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">The Search for Life</a>
+    <a href="sun.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">The Sun</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Rocky planets">Rocky planets <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="mercury.html" class="w3-bar-item w3-button">Mercury</a>
+        <a href="venus.html" class="w3-bar-item w3-button">Venus</a>
+        <a href="earth.html" class="w3-bar-item w3-button">Earth</a>
+        <a href="mars.html" class="w3-bar-item w3-button">Mars</a>
+      </div>
+    </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Gas giants">Gas giants <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="jupiter.html" class="w3-bar-item w3-button">Jupiter</a>
+        <a href="saturn.html" class="w3-bar-item w3-button">Saturn</a>
+      </div>
+    </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Ice giants">Ice giants <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="uranus.html" class="w3-bar-item w3-button">Uranus</a>
+        <a href="neptune.html" class="w3-bar-item w3-button">Neptune</a>
+      </div>
+    </div>
+            <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">More <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="dwarf_planets.html" class="w3-bar-item w3-button">Dwarf planets</a>
+        <a href="asteroids.html" class="w3-bar-item w3-button">Asteroids</a>
+        <a href="comets.html" class="w3-bar-item w3-button">Comets</a>
+        <a href="kuiper_belt.html" class="w3-bar-item w3-button">Kuiper Belt</a>
+        <a href="oort_cloud.html" class="w3-bar-item w3-button">Oort Cloud</a>
+        <a href="explanations.html" class="w3-bar-item w3-button">Explanations</a>
+        <a href="external_links.html" class="w3-bar-item w3-button">External links</a>
+      </div>
+    </div>
+
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="search_for_life.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Search for Life</a>
+  <a href="sun.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Sun</a>
+  
+  <a href="mercury.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Mercury</a>
+  <a href="venus.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Venus</a>
+  <a href="earth.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Earth</a>
+  <a href="mars.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Mars</a>
+  
+  <a href="jupiter.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Jupiter</a>
+  <a href="saturn.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Saturn</a>
+  
+  <a href="uranus.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Uranus</a>
+  <a href="neptune.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Neptune</a>
+  
+  <a href="dwarf_planets.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Dwarf planets</a>
+  <a href="asteroids.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Asteroids</a>
+  <a href="comets.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Comets</a>
+  <a href="kuiper_belt.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Kuiper Belt</a>
+  <a href="oort_cloud.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Oort Cloud</a>
+  <a href="explanations.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Explanations</a>
+  <a href="external_links.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">External links</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/mercury/Mercury_in_color_-_Prockter07_centered.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>
+Full-color image of Mercury from first MESSENGER flyby. </h3>
+      <p>NASA/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington. Edited version of Image:Mercury in color - Prockter07.jpg by Papa Lima Whiskey., Public domain, via Wikimedia Commons.</p>
+    </div>
+  </div>
+  
+    <div class="mySlides w3-display-container w3-center">
+    <img src="images/mercury/797px-Mercury_(planet).png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>
+Diagram of the planet Mercury, including all of its layers. </h3>
+      <p>A loose necktieiThe source code of this  SVG is valid. This  vector image was created with Adobe Illustrator., <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>, via Wikimedia Commons.</p>
+    </div>
+  </div>
+
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/mercury/Mercury,_Venus_and_the_Moon_Align.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>
+A conjunction of Mercury and Venus, aligned above the Moon, as seen from the Paranal Observatory. </h3>
+      <p>ESO/Y. Beletsky, <a href="https://creativecommons.org/licenses/by/4.0" target="_blank">CC BY 4.0</a>, via Wikimedia Commons.</p>
+    </div>
+  </div>
+  
+  <!-- Main section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1500px" id="band">
+    <h1 class="w3-wide" style="font-size:60px">MERCURY</h1>
+    <p class="w3-opacity"><i>Mercury is the closest planet to the Sun and the smallest planet in the Solar System. It has a solid, cratered surface, giving it a similar appearance to Earth's moon.</i></p>
+    
+    <br>
+    <!-- Fact boxes -->    
+    <h1 class="w3-wide">
+    FACTS
+    </h1>
+    
+    <div class="boxes">
+    
+    <div class="factbox">
+    <h2 class="w3-wide"> BURNT THEN FROZEN </h2>
+    <p align="left">Surface temperatures on Mercury swing wildly. During the day, when facing the Sun, the surface temperature reaches a staggering 430 deg C. At night, when facing away from the Sun, the temperature drops to a chilly -180 deg C. This is because Mercury has almost no atmosphere to hold on to the Sun's heat, so it escapes into space at night.</p>
+    </div>
+    
+    <div class="factbox">
+    <h2 class="w3-wide"> MESSENGER OF THE GODS </h2>
+    <p align="left">Mercury is named after the Greek messenger of the gods, Hermes. In Greek mythology, Hermes was the mediator between the gods and the mortals.</p>
+    </div>
+    
+    <div class="factbox">
+    <h2 class="w3-wide"> ITS DAY IS LONGER THAN ITS YEAR </h2>
+    <p align="left">Mercury's year (the time it takes for it to complete one orbit of the Sun) is 87.97 Earth days, but just 1 day on Mercury (the time from sunrise to sunset) is equivalent to 176 Earth days. Therefore, if you lived on Mercury, you would celebrate your birthday twice a day, every day!</p>
+    </div>
+    
+    <div class="factbox">
+    <h2 class="w3-wide"> ONLY TWO SPACECRAFTS HAVE EVER VISITED </h2>
+    <p align="left">Because it is so close to the Sun, Mercury is a difficult planet to visit. Only two spacecrafts have ever visited Mercury. During 1974 and 1975 Mariner 10 flew by three times, mapping much of the planet's surface. Then, in August 2004, the Messenger probe was launched from Cape Canaveral Air Force Station in Florida, United States and became the first spacecraft to visit since the mid 1970s.</p>
+    </div>
+    
+    <div class="factbox">
+    <h2 class="w3-wide"> WATER COULD EXIST IN THE FORM OF ICE </h2>
+    <p align="left">It is believed that craters located at the poles of Mercury could retain water ice. This is because the craters are cold and shadowy because light from the Sun cannot reach them.</p>
+    </div>
+    
+    <div class="factbox">
+    <h2 class="w3-wide"> IT HAS THE MOST CRATERS OF ANY PLANET IN THE SOLAR SYSTEM </h2>
+    <p align="left">Because it has almost no atmosphere, Mercury has nothing to protect it against meteor impacts. As a result, its surface has become heavily cratered, giving the planet a very similar look to our Moon.</p>
+    </div>    
+    
+    </div>
+
+  <!-- Figures -->
+  <div class="div2">
+  <br>
+  
+  <h1 class="w3-wide"> FIGURES </h1>
+  <table id="figures">
+
+  <tr>
+    <td><b>Orbital period</b></td>
+    <td>87.97 Earth days</td>
+    <td>This is the time it takes for Mercury to complete one orbit of the Sun.</td>
+  </tr>
+  
+  <tr>
+    <td><b>Diameter</b></td>
+    <td>4,880 km</td>
+    <td>This is the distance across Mercury, from one point on its surface to the opposite side.</td>
+  </tr>
+  
+    <tr>
+    <td><b>Volume</b></td>
+    <td>60,800,000,000 km^3</td>
+    <td>That's the same as 0.056 Earths, meaning that Mercury is only 5.6% of the volume of the Earth.</td>
+  </tr>
+  
+      <tr>
+    <td><b>Surface gravity</b></td>
+    <td>3.7 m/s^2</td>
+    <td>The strength of gravity on Mercury is very weak compared to that on Earth. You would be able to jump up much higher on the surface of Mercury, because the gravity there is only around 38% of that of Earth's.</td>
+  </tr>
+  
+        <tr>
+    <td><b>Escape velocity</b></td>
+    <td>4.25 km/s</td>
+    <td>This is the minimum speed a rocket launched from the surface of Mercury would need in order to escape its gravity and enter into space.</td>
+  </tr>
+  
+          <tr>
+    <td><b>Number of moons</b></td>
+    <td>0</td>
+    <td>Mercury and Venus are the only two planets in the Solar System that do not have any moons.</td>
+  </tr>
+
+  </table>
+  </div>
+  
+  <!-- Life discussion -->
+  <br>
+  <h1 class="w3-wide"> LIFE ON MERCURY? </h1>
+  
+  <ul>
+<li>The variation in surface temperature between day and night on Mercury makes it extremely hostile to life as we know it.</li>
+
+<li>The only possibility humans would have to colonise Mercury in the future would be its north and south poles. That's because light from the Sun never reaches them, so they are always dark, and the temperature never goes below -90 deg C.</li>
+
+<li>A base could one day be built within the craters at the poles and humans could be sent there to live. It would need to be self-sustaining, meaning that we would need to grow our own food, and harvest other essential resources such as water and energy in some way or another.</li>
+
+<li>There is plenty of water available due to stores of water ice at the poles. It is estimated from data sent back by the MESSENGER probe that there could be between 100 billion and 1 trillion tons of water ice at both poles - more than enough to sustain even multiple bases on the planet!</li>
+
+<li>Energy wouldn't be much of a problem either, as Mercury is nearly three times closer to the Sun than the Earth. Solar panels on Mercury would be far more efficient than they are on Earth and solar energy could be used to power a future civilisation there.</li>
+
+<li>But life on Mercury would be a miserable one. The human body is not designed to live in such low gravity, causing our bones to weaken. The radiation would also be deadly because of Mercury's closeness to the Sun, presenting a range of health problems to us humans.</li>
+
+<li>The scenery would also be very dull and depressing. You would permanently live in darkness.</li>
+
+<li>Attempting to construct such a base would also be massively expensive. The chance for life on Mercury does not attract as much attention as other places in the Solar System and the money would be better spent trying to establish life elsewhere. <a href="mars.html">Mars</a> perhaps?</li>
+  
+  </ul>
+  
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {font-family: "Lato", sans-serif; font-size: 18px}
+.mySlides {display: none}
+
+li{
+  margin: 25px 0;
+  text-align: left;
+}
+.factbox {
+	background-color: lightgrey;
+	width: 450px;
+	height: 500px;
+	padding: 35px;
+	display: inline-block;
+    position: relative;
+	float: left;
+	margin: 1%;
+}
+
+.boxes {
+	/*position: relative;
+	left: 200px*/
+	margin: auto
+}
+
+.div2 {
+	clear: left;
+}
+
+#figures {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+}
+
+#figures td, #figures th {
+  /*border: 1px solid #ddd;*/
+  padding: 12px;
+  text-align: left;
+}
+
+#figures tr:hover {background-color: #ddd;}
+
+#figures th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+/*
+#figures tr > td:last-child {
+  display: none;
+}
+
+#figures tr:hover > td:last-child {
+  display: block;
+}
+*/
+
