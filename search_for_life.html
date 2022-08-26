@@ -8,8 +8,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="flickity.css" media="screen">
 </head>
 <body>
+<script src="flickity.pkgd.min.js"></script>
 
 <!-- Navbar -->
 <div class="w3-top">
@@ -61,40 +63,54 @@
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <a href="search_for_life.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Search for Life</a>
-  <a href="sun.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Sun</a>
-  
-  <a href="mercury.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Mercury</a>
-  <a href="venus.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Venus</a>
-  <a href="earth.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Earth</a>
-  <a href="mars.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Mars</a>
-  
-  <a href="jupiter.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Jupiter</a>
-  <a href="saturn.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Saturn</a>
-  
-  <a href="uranus.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Uranus</a>
-  <a href="neptune.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Neptune</a>
-  
-  <a href="dwarf_planets.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Dwarf planets</a>
-  <a href="asteroids.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Asteroids</a>
-  <a href="comets.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Comets</a>
-  <a href="kuiper_belt.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Kuiper Belt</a>
-  <a href="oort_cloud.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Oort Cloud</a>
-  <a href="explanations.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Explanations</a>
-  <a href="external_links.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">External links</a>
+  <a href="sun.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Sun</a>  
+  <a href="rocky_planets.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Rocky planets</a>
+    <a href="gas_giants.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Gas giants</a>  
+  <a href="ice_giants.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Ice giants</a>  
+  <a href="more.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">More</a>
 </div>
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-  <!-- Main image - to be changed to slideshow -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="images/MarsCuriosityRover-Drilling-Sol170++-2.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>
-View of Curiosity's robotic arm showing drill in place, with Yellowknife Bay and Mount Sharp in the background. </h3>
-      <p>NASA / JPL-Caltech / Olivier de Goursac, Public domain, via Wikimedia Commons.</p>
+<!-- Carousel -->
+<!-- Flickity HTML init -->
+<div class="carousel js-flickity" data-flickity='{ "autoPlay": true }'>
+
+	<!-- Image 1 -->
+  <div class="carousel-cell">
+    <img src="images/MarsCuriosityRover-Drilling-Sol170++-2.jpg" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3>View of Curiosity's robotic arm showing drill in place, with Yellowknife Bay and Mount Sharp in the background.</h3>
+    	<p class="w3-justify">NASA / JPL-Caltech / Olivier de Goursac, Public domain, via Wikimedia Commons.</p>
+    	</div>
     </div>
   </div>
+  
+  	<!-- Image 2 -->
+  <div class="carousel-cell">
+    <img src="images/Blacksmoker_in_Atlantic_Ocean.jpg" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3>Black smoker at a mid-ocean ridge hydrothermal vent</h3>
+    	<p class="w3-justify">P. Rona / OAR/National Undersea Research Program (NURP); NOAA, Public domain, via Wikimedia Commons.</p>
+    	</div>
+    </div>
+  </div>
+  
+  	<!-- Image 3 -->
+  <div class="carousel-cell">
+    <img src="images/14-330a.jpg" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3>This image illustrates possible ways methane might be added to Mars' atmosphere (sources) and removed from the atmosphere (sinks). NASA's Curiosity Mars rover has detected fluctuations in methane concentration in the atmosphere, implying both types of activity occur on modern Mars.</h3>
+    	<p class="w3-justify">NASA, Public domain, via Wikimedia Commons. <a href="https://www.nasa.gov/press/2014/december/nasa-rover-finds-active-ancient-organic-chemistry-on-mars" target="_blank">Link to original article.</a></p>
+    	</div>
+    </div>
+  </div>  
+  
+</div>
   
   <!-- Main section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1200px" id="band">

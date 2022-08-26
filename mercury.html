@@ -8,8 +8,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="flickity.css" media="screen">
 </head>
 <body>
+<script src="flickity.pkgd.min.js"></script>
 
 <!-- Navbar -->
 <div class="w3-top">
@@ -61,58 +63,54 @@
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <a href="search_for_life.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Search for Life</a>
-  <a href="sun.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Sun</a>
-  
-  <a href="mercury.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Mercury</a>
-  <a href="venus.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Venus</a>
-  <a href="earth.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Earth</a>
-  <a href="mars.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Mars</a>
-  
-  <a href="jupiter.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Jupiter</a>
-  <a href="saturn.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Saturn</a>
-  
-  <a href="uranus.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Uranus</a>
-  <a href="neptune.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Neptune</a>
-  
-  <a href="dwarf_planets.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Dwarf planets</a>
-  <a href="asteroids.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Asteroids</a>
-  <a href="comets.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Comets</a>
-  <a href="kuiper_belt.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Kuiper Belt</a>
-  <a href="oort_cloud.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Oort Cloud</a>
-  <a href="explanations.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Explanations</a>
-  <a href="external_links.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">External links</a>
+  <a href="sun.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Sun</a>  
+  <a href="rocky_planets.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Rocky planets</a>
+    <a href="gas_giants.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Gas giants</a>  
+  <a href="ice_giants.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Ice giants</a>  
+  <a href="more.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">More</a>
 </div>
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="images/mercury/Mercury_in_color_-_Prockter07_centered.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>
-Full-color image of Mercury from first MESSENGER flyby. </h3>
-      <p>NASA/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington. Edited version of Image:Mercury in color - Prockter07.jpg by Papa Lima Whiskey., Public domain, via Wikimedia Commons.</p>
+<!-- Carousel -->
+<!-- Flickity HTML init -->
+<div class="carousel js-flickity" data-flickity='{ "autoPlay": true }'>
+
+	<!-- Image 1 -->
+  <div class="carousel-cell">
+    <img src="images/mercury/Mercury_in_color_-_Prockter07_centered.jpg" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3>Full-color image of Mercury from first MESSENGER flyby.</h3>
+    	<p class="w3-justify">NASA/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington. Edited version of Image:Mercury in color - Prockter07.jpg by Papa Lima Whiskey., Public domain, via Wikimedia Commons.</p>
+    	</div>
     </div>
   </div>
   
-    <div class="mySlides w3-display-container w3-center">
-    <img src="images/mercury/797px-Mercury_(planet).png" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>
-Diagram of the planet Mercury, including all of its layers. </h3>
-      <p>A loose necktieiThe source code of this  SVG is valid. This  vector image was created with Adobe Illustrator., <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>, via Wikimedia Commons.</p>
+  	<!-- Image 2 -->
+  <div class="carousel-cell">
+    <img src="images/mercury/797px-Mercury_(planet).png" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3>Diagram of the planet Mercury, including all of its layers.</h3>
+    	<p class="w3-justify">A loose necktieiThe source code of this  SVG is valid. This  vector image was created with Adobe Illustrator., <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>, via Wikimedia Commons.</p>
+    	</div>
     </div>
   </div>
-
-  <div class="mySlides w3-display-container w3-center">
-    <img src="images/mercury/Mercury,_Venus_and_the_Moon_Align.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>
-A conjunction of Mercury and Venus, aligned above the Moon, as seen from the Paranal Observatory. </h3>
-      <p>ESO/Y. Beletsky, <a href="https://creativecommons.org/licenses/by/4.0" target="_blank">CC BY 4.0</a>, via Wikimedia Commons.</p>
+  
+  	<!-- Image 3 -->
+  <div class="carousel-cell">
+    <img src="images/mercury/Mercury,_Venus_and_the_Moon_Align.jpg" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3>A conjunction of Mercury and Venus, aligned above the Moon, as seen from the Paranal Observatory.</h3>
+    	<p class="w3-justify">ESO/Y. Beletsky, <a href="https://creativecommons.org/licenses/by/4.0" target="_blank">CC BY 4.0</a>, via Wikimedia Commons.</p>
+    	</div>
     </div>
-  </div>
+  </div>  
+  
+</div>
   
   <!-- Main section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1500px" id="band">
