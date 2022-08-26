@@ -8,6 +8,9 @@ li{
   margin: 25px 0;
   text-align: left;
 }
+
+li:hover {background-color: GoldenRod;}
+
 .factbox {
 	background-color: GoldenRod;
 	width: 450px;
@@ -41,7 +44,7 @@ li{
   text-align: left;
 }
 
-#figures tr:hover {background-color: White;}
+#figures tr:hover {background-color: GoldenRod;}
 
 #figures th {
   padding-top: 12px;
