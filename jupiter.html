@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jupiter</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="flickity.css" media="screen">
+</head>
+<body>
+<script src="flickity.pkgd.min.js"></script>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="search_for_life.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">The Search for Life</a>
+    <a href="sun.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">The Sun</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Rocky planets">Rocky planets <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="mercury.html" class="w3-bar-item w3-button">Mercury</a>
+        <a href="venus.html" class="w3-bar-item w3-button">Venus</a>
+        <a href="earth.html" class="w3-bar-item w3-button">Earth</a>
+        <a href="mars.html" class="w3-bar-item w3-button">Mars</a>
+      </div>
+    </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Gas giants">Gas giants <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="jupiter.html" class="w3-bar-item w3-button">Jupiter</a>
+        <a href="saturn.html" class="w3-bar-item w3-button">Saturn</a>
+      </div>
+    </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Ice giants">Ice giants <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="uranus.html" class="w3-bar-item w3-button">Uranus</a>
+        <a href="neptune.html" class="w3-bar-item w3-button">Neptune</a>
+      </div>
+    </div>
+            <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">More <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="dwarf_planets.html" class="w3-bar-item w3-button">Dwarf planets</a>
+        <a href="asteroids.html" class="w3-bar-item w3-button">Asteroids</a>
+        <a href="comets.html" class="w3-bar-item w3-button">Comets</a>
+        <a href="kuiper_belt.html" class="w3-bar-item w3-button">Kuiper Belt</a>
+        <a href="oort_cloud.html" class="w3-bar-item w3-button">Oort Cloud</a>
+        <a href="explanations.html" class="w3-bar-item w3-button">Explanations</a>
+        <a href="external_links.html" class="w3-bar-item w3-button">External links</a>
+      </div>
+    </div>
+
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="search_for_life.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Search for Life</a>
+  <a href="sun.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Sun</a>  
+  <a href="rocky_planets.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Rocky planets</a>
+    <a href="gas_giants.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Gas giants</a>  
+  <a href="ice_giants.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Ice giants</a>  
+  <a href="more.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">More</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+<!-- Carousel -->
+<!-- Flickity HTML init -->
+<div class="carousel js-flickity" data-flickity='{ "autoPlay": true }'>
+
+	<!-- Image 1 -->
+  <div class="carousel-cell">
+    <img src="images/jupiter/Jupiter,_image_taken_by_NASA's_Hubble_Space_Telescope,_June_2019_-_Edited.jpg" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3> Visible light image of Jupiter taken by NASA's Hubble Space Telescope on June 27, 2019.</h3>
+    	<p class="w3-justify">NASA, ESA, and A. Simon (NASA Goddard), edited by PlanetUser, Public domain, via Wikimedia Commons.</p>
+    	</div>
+    </div>
+  </div>
+  
+  	<!-- Image 2 -->
+  <div class="carousel-cell">
+    <img src="images/jupiter/Jupiter_and_its_four_planet-size_moons.jpg" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3>Jupiter and its four planet-size moons, called the Galilean satellites, were photographed in early March by Voyager 1 and assembled into this collage. They are not to scale but are in their relative positions. Startling new discoveries on the Galilean moons and the planet Jupiter made by Voyager 1 have been factored into a new mission design for Voyager 2. Voyager 2 will fly past Jupiter on July 9.</h3>
+    	<p class="w3-justify">NASA, Public domain, via Wikimedia Commons.</p>
+    	</div>
+    </div>
+  </div>
+  
+  	<!-- Image 3 -->
+  <div class="carousel-cell">
+    <img src="images/jupiter/707_668761main_ac73-9341.jpg" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3>Pioneer 10 at Jupiter</h3>
+    	<p class="w3-justify">Source: NASA. <a href="https://solarsystem.nasa.gov/resources/707/pioneer-10-at-jupiter/" target="_blank">(Link.)</a></p>
+    	</div>
+    </div>
+  </div>  
+  
+</div>
+  
+  <!-- Main section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1500px" id="band">
+    <h1 class="w3-wide" style="font-size:60px">JUPITER</h1>
+    <p class="w3-opacity"><i>Jupiter is the fifth planet from the Sun. It is the largest and most massive planet in the Solar System.</i></p>
+    
+    <br>
+    <!-- Fact boxes -->    
+    <h1 class="w3-wide">
+    FACTS
+    </h1>
+    
+    <div class="boxes">
+    
+    <div class="factbox">
+    <h2 class="w3-wide"> THE BULLY OF THE SOLAR SYSTEM </h2>
+    <p align="left">If there is one planet in the Solar System that dominates as far as size and mass are concerned, it is quite easily Jupiter.
+	<br>
+	<br>
+	The mass of Jupiter is twice that of all the other planets in the Solar System combined!
+	</p>
+    </div>
+    
+    <div class="factbox">
+    <h2 class="w3-wide"> A FAILED STAR </h2>
+    <p align="left">Scientists often refer to Jupiter as a "failed star" because its atmosphere has a similar composition (is made of the same gases - mainly hydrogen and helium) to that of the Sun, and in the early days of the Solar System these gases and other material that went into forming Jupiter could have formed a star rather than a planet.
+	<br>
+	<br>
+	This didn't happen because there wasn't enough material to form a star.
+	</p>
+    </div>
+    
+    <div class="factbox">
+    <h2 class="w3-wide"> KING OF THE GODS </h2>
+    <p align="left">In Roman mythology, Jupiter was the king of the gods and the god of the sky and thunder.
+	<br>
+	<br>
+	The planet Jupiter is named after the Roman god of the same name.
+	</p>
+    </div>
+    
+    <div class="factbox">
+    <h2 class="w3-wide"> THE FASTEST SPINNING PLANET IN THE SOLAR SYSTEM </h2>
+    <p align="left">Even though it's enormous, Jupiter spins (rotates around its own axis) very quickly. A day on Jupiter (the time it takes to complete one such rotation) is only around 10 hours long.</p>
+    </div>
+    
+    <div class="factbox">
+    <h2 class="w3-wide"> THE GREAT RED SPOT </h2>
+    <p align="left">One of the most famous features of Jupiter is The Great Red Spot - a large storm on the planet that is visible from space.
+	<br>
+	<br>
+	The Great Red Spot is the largest storm in the Solar System. It is so large that you could fit around 3 Earths side-by-side inside it!
+	<br>
+	<br>
+	It also seems to persist over time, never going away. We have known about it for at least 360 years!
+	</p>
+    </div>
+    
+    <div class="factbox">
+    <h2 class="w3-wide"> THE GALILEAN MOONS: A MINI SOLAR SYSTEM </h2>
+    <p align="left">Out of Jupiter's moons, four are particularly large and easy to spot using a telescope on Earth. They are called the Galilean moons, because they were first observed by the astronomer Galileo Galilei.
+	<br>
+	<br>
+	These four moons orbit around Jupiter forming something of a "mini solar system" - the largest of the four moons, Ganymede, is larger than the planet Mercury!
+	</p>
+    </div>    
+    
+    </div>
+
+  <!-- Figures -->
+  <div class="div2">
+  <br>
+  
+  <h1 class="w3-wide"> FIGURES </h1>
+  <table id="figures">
+
+  <tr>
+    <td><b>Orbital period</b></td>
+    <td>4,332 Earth days</td>
+    <td>This is the time it takes for Jupiter to complete one orbit of the Sun. A year on Jupiter works out to be around 11.9 Earth years.</td>
+  </tr>
+  
+  <tr>
+    <td><b>Diameter</b></td>
+    <td>139,820 km</td>
+    <td>This is the distance across Mars, from one point on its surface to the opposite side.</td>
+  </tr>
+  
+    <tr>
+    <td><b>Mass</b></td>
+    <td>317.8 Earths</td>
+    <td>Jupiter is truly enormous, with a mass over 317 times that of our home planet.</td>
+  </tr>
+  
+      <tr>
+    <td><b>Surface gravity</b></td>
+    <td>24.79 m/s^2</td>
+    <td>The surface gravity on Jupiter is around 2.6 times stronger than on Earth.</td>
+  </tr>
+  
+        <tr>
+    <td><b>Escape velocity</b></td>
+    <td>59.5 km/s</td>
+    <td>This is the minimum speed a rocket launched from the surface of Jupiter would need in order to escape its gravity and enter into space.</td>
+  </tr>
+  
+          <tr>
+    <td><b>Number of moons</b></td>
+    <td>79</td>
+    <td>As of 2018, there are 79 known satellites of Jupiter. We are constantly finding new ones!</td>
+  </tr>
+
+  </table>
+  </div>
+  
+  <!-- Life discussion -->
+  <br>
+  <h1 class="w3-wide"> LIFE ON JUPITER? </h1>
+  
+  <ul>
+<li>Jupiter, along with Saturn, is described as a “gas giant” because that’s precisely what it is – a giant ball of rotating gas. Thus there is no solid “surface” as such, but rather different layers of the clouds/atmosphere.</li>
+
+<li>Any life on Jupiter would somehow need to be able to exist within the atmosphere, so it would need to either float or fly to be able to stay there. It would also need to withstand very hostile conditions. Jupiter is much further away from the Sun than any of the four rocky planets, so the temperature is much colder, far too cold for any known organisms on Earth to survive in. Many of the gases that make up Jupiter are also toxic to life.</li>
+
+<li>We do not write off the possibility of life on Jupiter, as there is a certain altitude in the atmosphere at which the conditions are more hospitable (warmer temperatures and withstandable pressures) and where certain chemicals that are needed for life do exist. However, the probability is very small.</li>
+
+<li>Not Jupiter itself, but much more interesting and potentially life-containing places are its four Galilean moons – Io, Europa, Ganymede and Callisto. Io is volcanically active and Europa is believed to have a liquid water ocean beneath the sheet of ice coating its surface. Plumes that shoot liquid water from above the surface of Europa have been observed.</li>
+
+<li>There is a possibility of life existing in these oceans, just as where we find water on Earth we find life. It is believed that hydrothermal vents could provide the energy needed for life to exist near the sea-floor on Europa. Hydrothermal vents release water into the ocean that has been geothermally heated (heated by tectonic activity from deeper within Europa).</li>
+
+<li>NASA plan to launch the Europa Clipper in 2024 – a spacecraft that will conduct a number of fly-bys of the moon, studying it in detail as it does so and refining our question of whether or not life could exist there.</li>
+
+<li>Europa is also a promising place for establishing a human colony in the future, with the vast abundance of liquid water (if we can access it!) being an obvious advantage. Unfortunately, this is still no simple task. One of the most significant challenges humans on Europa would face is the high dose of deadly radiation coming from Jupiter above the ice sheet, from which we would need to shield ourselves, or permanently live under the ice.</li>
+
+<li>The image below is an artist's concept of a 'cryobot' - a theoretical probe that could be deployed on Europa and drill through the surface ice to study the ocean of liquid water beneath. Could such a probe one day finally provide our species with the answer of whether or not we are alone in the Solar System?</li>
+
+<img src="images/jupiter/Cryobot.jpg" style="max-width: 500px" />
+<p><i>Artist's concept of the cryobot and hydrobot. These robots are in the very initial stages of design and may look very different as the robot design evolves. NASA, Public domain, via Wikimedia Commons.
+</i></p>
+  
+  </ul>
+  
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

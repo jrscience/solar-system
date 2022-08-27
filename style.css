@@ -1,6 +1,7 @@
 body {font-family: "Lato", sans-serif; font-size: 18px;
-	/*background-image: url("");*/
-	background-color: PaleGoldenRod;
+	color: White;
+	background-image: url("images/Cévennes_France_night_sky_with_stars_03.jpg");
+	/*background-color: MidnightBlue;*/
 }
 .mySlides {display: none}
 
@@ -9,10 +10,10 @@ li{
   text-align: left;
 }
 
-li:hover {background-color: GoldenRod;}
+li:hover {background-color: MidnightBlue;}
 
 .factbox {
-	background-color: GoldenRod;
+	background-color: MidnightBlue;
 	width: 450px;
 	height: 500px;
 	padding: 35px;
@@ -44,7 +45,7 @@ li:hover {background-color: GoldenRod;}
   text-align: left;
 }
 
-#figures tr:hover {background-color: GoldenRod;}
+#figures tr:hover {background-color: MidnightBlue;}
 
 #figures th {
   padding-top: 12px;
@@ -72,7 +73,7 @@ li:hover {background-color: GoldenRod;}
 /* body { font-family: sans-serif; } */
 
 .carousel {
-  background: black;
+  /*background: black;*/
 }
 
 .carousel-cell {
