@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The Sun</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="flickity.css" media="screen">
+</head>
+<body>
+<script src="flickity.pkgd.min.js"></script>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="search_for_life.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">The Search for Life</a>
+    <a href="sun.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">The Sun</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Rocky planets">Rocky planets <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="mercury.html" class="w3-bar-item w3-button">Mercury</a>
+        <a href="venus.html" class="w3-bar-item w3-button">Venus</a>
+        <a href="earth.html" class="w3-bar-item w3-button">Earth</a>
+        <a href="mars.html" class="w3-bar-item w3-button">Mars</a>
+      </div>
+    </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Gas giants">Gas giants <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="jupiter.html" class="w3-bar-item w3-button">Jupiter</a>
+        <a href="saturn.html" class="w3-bar-item w3-button">Saturn</a>
+      </div>
+    </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Ice giants">Ice giants <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="uranus.html" class="w3-bar-item w3-button">Uranus</a>
+        <a href="neptune.html" class="w3-bar-item w3-button">Neptune</a>
+      </div>
+    </div>
+            <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">More <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="dwarf_planets.html" class="w3-bar-item w3-button">Dwarf planets</a>
+        <a href="asteroids.html" class="w3-bar-item w3-button">Asteroids</a>
+        <a href="comets.html" class="w3-bar-item w3-button">Comets</a>
+        <a href="kuiper_belt.html" class="w3-bar-item w3-button">Kuiper Belt</a>
+        <a href="oort_cloud.html" class="w3-bar-item w3-button">Oort Cloud</a>
+        <a href="explanations.html" class="w3-bar-item w3-button">Explanations</a>
+        <a href="external_links.html" class="w3-bar-item w3-button">External links</a>
+      </div>
+    </div>
+
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="search_for_life.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Search for Life</a>
+  <a href="sun.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Sun</a>  
+  <a href="rocky_planets.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Rocky planets</a>
+    <a href="gas_giants.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Gas giants</a>  
+  <a href="ice_giants.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Ice giants</a>  
+  <a href="more.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">More</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+<!-- Carousel -->
+<!-- Flickity HTML init -->
+<div class="carousel js-flickity" data-flickity='{ "autoPlay": true }'>
+
+	<!-- Image 1 -->
+  <div class="carousel-cell">
+    <img src="images/sun/The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA's_Solar_Dynamics_Observatory_-_20100819.jpg" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3>The Sun photographed at 304 angstroms by the Atmospheric Imaging Assembly (AIA 304) of NASA's Solar Dynamics Observatory (SDO). This is a false-color image of the Sun observed in the extreme ultraviolet region of the spectrum.</h3>
+    	<p class="w3-justify">NASA/SDO (AIA), Public domain, via Wikimedia Commons.</p>
+    	</div>
+    </div>
+  </div>
+  
+  	<!-- Image 2 -->
+  <div class="carousel-cell">
+    <img src="images/sun/1024px-Solar_internal_structure.png" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3>Solar internal structure</h3>
+    	<p class="w3-justify">Sakurambo, <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank">CC BY-SA 3.0</a>, via Wikimedia Commons.</p>
+    	</div>
+    </div>
+  </div>
+  
+  	<!-- Image 3 -->
+  <div class="carousel-cell">
+    <img src="images/sun/SlicesOfSDO_rotor_stand.4Kx4K.03000.jpg" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3>Slices of the Sun</h3>
+    	<p class="w3-justify">Source: NASA/GSFC Scientific Visualization Studio. <a href="https://solarsystem.nasa.gov/resources/698/slices-of-the-sun/?category=solar-system_our-solar-system" target="_blank">(Link.)</a></p>
+    	</div>
+    </div>
+  </div>  
+  
+</div>
+  
+  <!-- Main section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1500px" id="band">
+    <h1 class="w3-wide" style="font-size:60px">THE SUN</h1>
+    <p class="w3-opacity"><i>The Sun is the star of our Solar System. Everything else in the Solar System is gravitationally bound to the Sun. Without the Sun, there is no Solar System.</i></p>
+    
+    <br>
+    <!-- Fact boxes -->    
+    <h1 class="w3-wide">
+    FACTS
+    </h1>
+    
+    <div class="boxes">
+    
+    <div class="factbox" style="height: 650px">
+    <h2 class="w3-wide"> WHAT COLOUR IS IT? </h2>
+    <p align="left">Remarkably, the answer is <i>not</i> yellow, as many people think. Light from the Sun is, in fact, white. This is because the Sun emits light over all wavelengths.
+    <br>
+    <br>
+    The reason it appears yellow, or sometimes red or orange, as seen from Earth, is that the Earth's atmosphere scatters other colours like blue, green and violet more easily, which leaves the "redder" colours behind.
+    </p>
+    </div>
+    
+    <div class="factbox" style="height: 650px">
+    <h2 class="w3-wide"> ONE OF A KIND? </h2>
+    <p align="left">There is nothing special about the Sun when compared to other stars. What makes the Sun special is that it is the star that the Earth orbits, the only place in the Universe currently known to have life.
+	<br>
+	<br>
+	The Sun is the source of all life on Earth. Without it, life on Earth could not exist. Not just this, but it also provides just the right conditions that have allowed life on Earth to evolve over billions of years.
+  <br>
+  <br>
+  Scientists are actively looking for other planets in space that go round other stars and that could also support life. These are called <i>exoplanets</i>.
+	</p>
+    </div>
+    
+    <div class="factbox" style="height: 650px">
+    <h2 class="w3-wide"> NOT SITTING STILL </h2>
+    <p align="left">Everything else in the Solar System orbits the Sun: all the planets (and their moons), dwarf planets, asteroids, comets, etc. But the Sun is not sitting still in the middle of space!
+	<br>
+	<br>
+	The Sun (and the Solar System as a whole, in fact) is orbitting the center of the Milky Way galaxy at a speed of 225 km/s.
+  <br>
+  <br>
+  Just as the planets orbit the Sun and are gravitationally bound to it, the Sun orbits and is gravitationally bound to, a supermassive black hole (called Sagittarius A*) at the galactic center.
+  <br>
+  <br>
+  The Sun also rotates on its axis (it is spinning) rapidly.
+	</p>
+    </div>
+    
+    <div class="factbox" style="height: 650px">
+    <h2 class="w3-wide"> AN ANGRY BEAST </h2>
+    <p align="left">The Sun is alive and kicking. It can eject enormous quantities of matter at once in violent events known as coronal mass ejections (CMEs for short.)
+    <br>
+    <br>
+    The Sun is actually powered by nuclear fusion reactions that happen inside the core. Here, the temperatures and pressures are so large that the nuclei of atoms fuse (join) together, releasing colossal amounts of energy. Ultimately, all the energy that we get from the Sun on Earth started in the Sun's core.
+    </p>
+    </div>
+    
+    <div class="factbox" style="height: 650px">
+    <h2 class="w3-wide"> A GODLY FIGURE </h2>
+    <p align="left">Many civilisations have worshipped the Sun throughout human history.
+	<br>
+	<br>
+	In ancient Greek mythology, Helios was the god of the Sun. The ancient Egypitians called their Sun god Ra, who was believed to be reborn every day as the Sun rose in the early morning sky.
+	</p>
+    </div>
+    
+    <div class="factbox" style="height: 650px">
+    <h2 class="w3-wide"> IT WON'T LAST FOREVER </h2>
+    <p align="left">Just as the Sun was kind enough to allow life to exist on Earth, it will one day take it away forever.
+	<br>
+	<br>
+	The nuclear reactions inside the Sun's core will one day come to a stop. Then, the Sun will expand to 250 times its current size, swallowing up the inner planets including Earth.
+  <br>
+  <br>
+  All the liquid water on Earth's surface will have boiled away by the expanding Sun long before this happens.
+  <br>
+  <br>
+  Fortunately, there is a long wait before the nuclear reactions in the core stop, at least another 4 billion years!
+	</p>
+    </div>    
+    
+    </div>
+
+  <!-- Figures -->
+  <div class="div2">
+  <br>
+  
+  <h1 class="w3-wide"> FIGURES </h1>
+  <table id="figures">
+
+  <tr>
+    <td><b>Spectral type</b></td>
+    <td>G2V</td>
+    <td>Sometimes it is referred to as a "yellow dwarf" star.</td>
+  </tr>
+  
+  <tr>
+    <td><b>Mass</b></td>
+    <td>333,000 Earths</td>
+    <td>The Sun accounts for an incredible <b>99.8%</b> of the mass of the entire Solar System!</td>
+  </tr>
+  
+    <tr>
+    <td><b>Volume</b></td>
+    <td>1.3 million Earths</td>
+    <td>That means that 1.3 million Earths, all packed together, would fit inside the Sun.</td>
+  </tr>
+  
+      <tr>
+    <td><b>Surface gravity</b></td>
+    <td>274 m/s^2</td>
+    <td>The Sun has a very powerful gravitational influence, keeping everything else in the Solar System in orbit around it.</td>
+  </tr>
+  
+        <tr>
+    <td><b>Escape velocity</b></td>
+    <td>615 km/s</td>
+    <td>This is the minimum speed a rocket launched from the surface of the Sun would need in order to escape its gravity and enter into space. It is about 55 times greater than Earth's escape velocity!</td>
+  </tr>
+  
+          <tr>
+    <td><b>Surface temperature</b></td>
+    <td>5,504 deg C</td>
+    <td>Inside the core, where nuclear reactions take place, temperatures can reach <i>millions</i> of degrees Celsius!</td>
+  </tr>
+
+  </table>
+  </div>
+  
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
