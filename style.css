@@ -44,7 +44,11 @@ li:hover {background-color: MidnightBlue;}
   text-align: left;
 }
 
-#figures tr:hover {background-color: MidnightBlue;}
+/*#figures tr:hover {background-color: MidnightBlue;}*/
+
+#figures tr:nth-child(even) {
+  background-color: midnightblue;
+}
 
 #figures th {
   padding-top: 12px;
@@ -53,6 +57,7 @@ li:hover {background-color: MidnightBlue;}
   background-color: #04AA6D;
   color: white;
 }
+
 
 /*
 #figures tr > td:last-child {
@@ -63,6 +68,7 @@ li:hover {background-color: MidnightBlue;}
   display: block;
 }
 */
+
 
 /* CAROUSEL CSS */
 /* external css: flickity.css */
