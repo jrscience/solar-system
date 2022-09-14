@@ -23,10 +23,9 @@ li:hover {background-color: MidnightBlue;}
 	margin: 1%;
 }
 
-.boxes {
-	/*position: relative;
-	left: 200px*/
-	margin: auto
+.responsive{
+  width: 100%;
+  height: auto;
 }
 
 .div2 {
