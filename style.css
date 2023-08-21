@@ -1,0 +1,215 @@
+body {font-family: "Lato", sans-serif; font-size: 20px;
+	color: White;
+	background-image: url("images/Cévennes_France_night_sky_with_stars_03.jpg");
+	/*background-color: MidnightBlue;*/
+}
+.mySlides {display: none}
+
+li{
+  margin: 35px 0;
+  text-align: left;
+}
+
+li:hover {background-color: MidnightBlue;}
+
+.factbox {
+	background-color: MidnightBlue;
+	width: 450px;
+	height: 500px;
+	padding: 35px;
+	display: inline-block;
+    position: relative;
+	float: left;
+	margin: 1%;
+}
+
+.responsive{
+  width: 100%;
+  height: auto;
+}
+
+.div2 {
+	clear: left;
+}
+
+#figures {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+#figures td, #figures th {
+  /*border: 1px solid #ddd;*/
+  padding: 12px;
+  text-align: left;
+}
+
+/*#figures tr:hover {background-color: MidnightBlue;}*/
+
+#figures tr:nth-child(even) {
+  background-color: midnightblue;
+}
+
+#figures th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+/*
+#figures tr > td:last-child {
+  display: none;
+}
+
+#figures tr:hover > td:last-child {
+  display: block;
+}
+*/
+
+
+/* CAROUSEL CSS */
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+/* body { font-family: sans-serif; } */
+
+.carousel {
+  /*background: black;*/
+}
+
+.carousel-cell {
+  width: auto;
+  height: auto;
+  min-height:600px;
+  /* flex-box, center image in cell */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.carousel-cell img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  /* dim unselected */
+  opacity: 0.7;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+          transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+/* brighten selected image */
+.carousel-cell.is-selected img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: none;
+          filter: none;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell {
+    height: 400px;
+  }
+}
+
+@media screen and ( min-width: 960px ) {
+  .carousel-cell {
+    width: 60%;
+  }
+}
+
+/* buttons, no circle */
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  opacity: 0.6;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+  opacity: 1;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* closer to edge */
+.flickity-prev-next-button.previous { left: 0; }
+.flickity-prev-next-button.next { right: 0; }
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+/* Image overlay effect */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.carousel-cell:hover .overlay {
+  opacity: 0.75;
+}
+
+.text {
+  color: white;
+  /*font-size: 20px;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.iframe-container{
+  position: relative;
+  width: 100%
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
