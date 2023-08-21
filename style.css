@@ -1,4 +1,4 @@
-body {font-family: "Lato", sans-serif; font-size: 18px;
+body {font-family: "Lato", sans-serif; font-size: 20px;
 	color: White;
 	background-image: url("images/Cévennes_France_night_sky_with_stars_03.jpg");
 	/*background-color: MidnightBlue;*/
@@ -6,7 +6,7 @@ body {font-family: "Lato", sans-serif; font-size: 18px;
 .mySlides {display: none}
 
 li{
-  margin: 25px 0;
+  margin: 35px 0;
   text-align: left;
 }
 
