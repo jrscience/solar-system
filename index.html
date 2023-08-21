@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="flickity.css" media="screen">
+<link rel="icon" type="image/x-icon" href="images/Eruptive_prominence_(captured_by_STEREO,_2010-04)_(cropped).png">
+</head>
+<body>
+<script src="flickity.pkgd.min.js"></script>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="search_for_life.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">The Search for Life</a>
+    <a href="sun.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">The Sun</a>
+    <!-- <a href="moon.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Earth's Moon</a> -->
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Rocky planets">Rocky planets <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="mercury.html" class="w3-bar-item w3-button">Mercury</a>
+        <a href="venus.html" class="w3-bar-item w3-button">Venus</a>
+        <a href="earth.html" class="w3-bar-item w3-button">Earth</a>
+        <a href="mars.html" class="w3-bar-item w3-button">Mars</a>
+      </div>
+    </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Gas giants">Gas giants <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="jupiter.html" class="w3-bar-item w3-button">Jupiter</a>
+        <a href="saturn.html" class="w3-bar-item w3-button">Saturn</a>
+      </div>
+    </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Ice giants">Ice giants <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="uranus.html" class="w3-bar-item w3-button">Uranus</a>
+        <a href="neptune.html" class="w3-bar-item w3-button">Neptune</a>
+      </div>
+    </div>
+            <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">More <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="dwarf_planets.html" class="w3-bar-item w3-button">Dwarf planets</a>
+        <a href="asteroids.html" class="w3-bar-item w3-button">Asteroids</a>
+        <a href="comets.html" class="w3-bar-item w3-button">Comets</a>
+        <a href="kuiper_belt.html" class="w3-bar-item w3-button">Kuiper Belt</a>
+        <a href="oort_cloud.html" class="w3-bar-item w3-button">Oort Cloud</a>
+        <!-- <a href="beyond.html" class="w3-bar-item w3-button">Beyond the Solar System</a> -->
+        <a href="explanations.html" class="w3-bar-item w3-button">Explanations</a>
+        <a href="external_links.html" class="w3-bar-item w3-button">External links</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="search_for_life.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Search for Life</a>
+  <a href="sun.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Sun</a>  
+  <!-- <a href="moon.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Earth's Moon</a> -->
+  <a href="rocky_planets.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Rocky planets</a>
+    <a href="gas_giants.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Gas giants</a>  
+  <a href="ice_giants.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Ice giants</a>  
+  <a href="more.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">More</a>
+
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  
+<!-- Carousel -->
+<!-- Flickity HTML init -->
+<div class="carousel js-flickity" data-flickity='{ "autoPlay": true }'>
+
+	<!-- Image 1 -->
+  <div class="carousel-cell">
+    <img src="images/gallery/Solar_System_true_color.jpg" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3>The Solar System with planets and moons in true color. Dwarf planets are also included from both the Asteroid Belt and the Kuiper Belt. Distance between them is not to scale.</h3>
+    	<p class="w3-justify">CactiStaccingCrane, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>, via Wikimedia Commons.</p>
+    	</div>
+    </div>
+  </div>
+  
+  	<!-- Image 2 -->
+  <div class="carousel-cell">
+    <img src="images/gallery/wispr-big.jpg" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3>Parker Solar Probe Spots Coronal Streamer</h3>
+    	<p class="w3-justify"><a href="https://solarsystem.nasa.gov/resources/2629/parker-solar-probe-spots-coronal-streamer/?category=solar-system_our-solar-system" target="_blank"><b>Source:</b> NASA/Naval Research Laboratory/Parker Solar Probe</a></p>
+    	</div>
+    </div>
+  </div>
+  
+  	<!-- Image 3 -->
+  <div class="carousel-cell">
+    <img src="images/gallery/PIA22224-16.jpg" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3>Curiosity Tests a New Drill Method on Mars</h3>
+    	<p class="w3-justify"><a href="https://solarsystem.nasa.gov/resources/734/curiosity-tests-a-new-drill-method-on-mars/?category=solar-system_our-solar-system" target="_blank"><b>Source:</b> NASA/JPL-Caltech/MSSS</a></p>
+    	</div>
+    </div>
+  </div>  
+  
+</div>
+
+  <!-- Main section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1200px" id="band">
+    <h1 class="w3-wide" style="font-size:60px">WELCOME TO THE SOLAR SYSTEM</h1>
+
+    <p class="w3-opacity" style="font-size:30px"><i>Welcome home.</i></p>
+
+    <ul>
+      <li>8 planets, 290 moons, countless asteroids</li>
+      <li>At least another 30,000 years before the Voyager 1 probe (mouse cursor) leaves the Solar System. It has been travelling a million miles through space every day since its launch in 1977!</li>
+      <li>One of billions of other Solar Systems in the Milky Way Galaxy. The Milky Way Galaxy is one of trillions in the observable Universe!</li>
+      <li>Home to planet Earth - the only place we currently know of to contain life!</li>
+    </ul>
+
+<!--
+    <p class="w3-justify">Here you can learn about the Solar System. Visit each planet to learn more about it in detail, including whether or not life could exist, or be established, there or on one or more of its moons, explore its facts and figures, and view breath-taking images.
+		<br>
+    <br>
+If you're viewing the desktop site, you'll notice your mouse cursor has changed to the <i>Voyager 1</i> space probe. Since its launch in 1977, Voyager 1 has been travelling through space at a speed of <i>a million miles per day</i>. It has provided us with invaluable information about many of the planets and moons in the Solar System, but it will not enter <i>interstellar</i> space for another... <b><i>30,000 YEARS!!</i></b>
+    <br>
+    <br>
+The video below may also help provide some sense of scale. Put simply, the Solar System is <i>incredibly</i> vast!
+    <br>
+    <br>
+And yet... it is only one of <i>billions</i> like it in our galaxy. And... our galaxy is one of <i>trillions</i> in the <i>observable</i> universe!!
+    <br>
+    <br>
+  </p>
+-->
+
+<br>
+<div class="w3-panel w3-leftbar w3-indigo">
+  <p class="w3-xlarge"><i>"The solar system is completely wide open. Almost anywhere we go, I'm sure we would learn a lot."</i></p>
+  <p>Alan Stern (American engineer and planetary scientist, b. 1957)</p>
+</div>
+
+<!-- End Page Content -->
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+<!-- Mouse cursor script -->
+<script language="JavaScript1.2">
+  
+  /*
+  Submitted by Marcin Wojtowicz [one_spook@hotmail.com] 
+  Featured on JavaScript Kit (http://javascriptkit.com)
+  Modified by JK to be IE7+/ Firefox compatible
+  For this and over 400+ free scripts, visit http://javascriptkit.com
+  */
+  
+  var trailLength = 4 // The length of trail (8 by default; put more for longer "tail")
+  var path = "images/voyager.png" // URL of your image
+  
+  var standardbody=(document.compatMode=="CSS1Compat")? document.documentElement : document.body //create reference to common "body" across doctypes
+  var i,d = 0
+  
+  function initTrail() { // prepares the script
+    images = new Array() // prepare the image array
+    for (i = 0; i < parseInt(trailLength); i++) {
+      images[i] = new Image()
+      images[i].src = path
+    }
+    storage = new Array() // prepare the storage for the coordinates
+    for (i = 0; i < images.length*3; i++) {
+      storage[i] = 0
+    }
+    for (i = 0; i < images.length; i++) { // make divs for IE and layers for Navigator
+      document.write('<div id="obj' + i + '" style="position: absolute; z-Index: 100; height: 0; width: 0"><img src="' + images[i].src + '"></div>')
+    }
+    trail()
+  }
+  function trail() { // trailing function
+    for (i = 0; i < images.length; i++) { // for every div/layer
+      document.getElementById("obj" + i).style.top = storage[d]+'px' // the Y-coordinate
+      document.getElementById("obj" + i).style.left = + storage[d+1]+'px' // the X-coordinate
+      d = d+2
+    }
+    for (i = storage.length; i >= 2; i--) { // save the coordinate for the div/layer that's behind
+      storage[i] = storage[i-2]
+    }
+    d = 0 // reset for future use
+    var timer = setTimeout("trail()",10) // call recursively 
+  }
+  function processEvent(e) { // catches and processes the mousemove event 
+    if (window.event) { // for IE
+      storage[0] = window.event.y+standardbody.scrollTop+10
+      storage[1] = window.event.x+standardbody.scrollLeft+10
+    } else {
+      storage[0] = e.pageY+12
+      storage[1] = e.pageX+12
+    }
+  }
+  
+    initTrail() 
+    document.onmousemove = processEvent // start capturing
+  
+  //
+  </script>
+
+
+</body>
+</html>
