@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Venus</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="flickity.css" media="screen">
+<link rel="icon" type="image/x-icon" href="images/Eruptive_prominence_(captured_by_STEREO,_2010-04)_(cropped).png">
+</head>
+<body>
+<script src="flickity.pkgd.min.js"></script>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="search_for_life.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">The Search for Life</a>
+    <a href="sun.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">The Sun</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Rocky planets">Rocky planets <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="mercury.html" class="w3-bar-item w3-button">Mercury</a>
+        <a href="venus.html" class="w3-bar-item w3-button">Venus</a>
+        <a href="earth.html" class="w3-bar-item w3-button">Earth</a>
+        <a href="mars.html" class="w3-bar-item w3-button">Mars</a>
+      </div>
+    </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Gas giants">Gas giants <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="jupiter.html" class="w3-bar-item w3-button">Jupiter</a>
+        <a href="saturn.html" class="w3-bar-item w3-button">Saturn</a>
+      </div>
+    </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Ice giants">Ice giants <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="uranus.html" class="w3-bar-item w3-button">Uranus</a>
+        <a href="neptune.html" class="w3-bar-item w3-button">Neptune</a>
+      </div>
+    </div>
+            <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">More <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="dwarf_planets.html" class="w3-bar-item w3-button">Dwarf planets</a>
+        <a href="asteroids.html" class="w3-bar-item w3-button">Asteroids</a>
+        <a href="comets.html" class="w3-bar-item w3-button">Comets</a>
+        <a href="kuiper_belt.html" class="w3-bar-item w3-button">Kuiper Belt</a>
+        <a href="oort_cloud.html" class="w3-bar-item w3-button">Oort Cloud</a>
+        <a href="explanations.html" class="w3-bar-item w3-button">Explanations</a>
+        <a href="external_links.html" class="w3-bar-item w3-button">External links</a>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="search_for_life.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Search for Life</a>
+  <a href="sun.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Sun</a>  
+  <a href="rocky_planets.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Rocky planets</a>
+    <a href="gas_giants.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Gas giants</a>  
+  <a href="ice_giants.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Ice giants</a>  
+  <a href="more.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">More</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+<!-- Carousel -->
+<!-- Flickity HTML init -->
+<div class="carousel js-flickity" data-flickity='{ "autoPlay": true }'>
+
+	<!-- Image 1 -->
+  <div class="carousel-cell">
+    <img src="images/venus/Venus_globe.jpg" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3>Venus - Computer Simulated Global View Centered at 180 Degrees East Longitude</h3>
+    	<p class="w3-justify">NASA, Public domain, via Wikimedia Commons.</p>
+    	</div>
+    </div>
+  </div>
+  
+  	<!-- Image 2 -->
+  <div class="carousel-cell">
+    <img src="images/venus/Venuspioneeruv.jpg" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3> Ultraviolet image of Venus' clouds as seen by the Pioneer Venus Orbiter (February 26, 1979). The immense C- or Y-shaped features which are visible only in these wavelengths are individually short lived, but reform often enough to be considered a permanent feature of Venus' clouds. The mechanism by which Venus' clouds absorb ultraviolet is not well understood.</h3>
+    	<p class="w3-justify">NASA, Public domain, via Wikimedia Commons.</p>
+    	</div>
+    </div>
+  </div>
+  
+  	<!-- Image 3 -->
+  <div class="carousel-cell">
+    <img src="images/mercury/Mercury,_Venus_and_the_Moon_Align.jpg" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3>A conjunction of Mercury and Venus, aligned above the Moon, as seen from the Paranal Observatory.</h3>
+    	<p class="w3-justify">ESO/Y. Beletsky, <a href="https://creativecommons.org/licenses/by/4.0" target="_blank">CC BY 4.0</a>, via Wikimedia Commons.</p>
+    	</div>
+    </div>
+  </div>  
+  
+</div>
+  
+  <!-- Main section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1500px" id="band">
+    <h1 class="w3-wide" style="font-size:60px">VENUS</h1>
+    <p class="w3-opacity"><i>Venus is the second planet from the Sun and the hottest planet in the Solar System. It has a similar size and gravity to Earth.</i></p>
+    
+    <br>
+    <!-- Overview -->
+    <h1 class="w3-wide">OVERVIEW</h1>
+
+    <img src="images/line_venus.png" class="responsive"/>
+
+    <br>
+    <br>
+    <div class="w3-border w3-border-white w3-bottombar w3-leftbar w3-rightbar w3-topbar" style="background-color: MidnightBlue;">
+      <h4 style="padding: 12px; letter-spacing: 1px;">
+        Sun &nbsp; &#8212; &nbsp; Mercury &nbsp; &nbsp; &#8212; &nbsp; &nbsp; <span class="blink_me">Venus</span> &nbsp; &nbsp; &#8212; &nbsp; &nbsp; Earth &nbsp; &nbsp; &#8212; &nbsp; &nbsp; Mars &nbsp; &nbsp; &#8212; &nbsp; &nbsp; Jupiter &nbsp; &nbsp; &#8212; &nbsp; &nbsp; Saturn &nbsp; &nbsp; &#8212; &nbsp; &nbsp; Uranus &nbsp; &#8212; &nbsp; Neptune
+      </h4>
+      </div>
+
+    <ul>
+      <li>Second planet from the Sun. Second of the four rocky planets (Mercury, Venus, Earth, Mars)</li>
+      <li>Similar size and gravity to Earth</li>
+      <li>Unusual because it spins in the opposite direction of Earth and most other planets</li>
+      <li>Very slow rotation means its day (the time to complete one rotation) is longer than its year (the time to go round the Sun)</li>
+      <li>Thick, toxic atmosphere filled with carbon dioxide. Surface covered by thick clouds of sulfuric acid</li>
+      <li>Hottest planet in the Solar System</li>
+      <li>Surface covered in volcanoes. Some may still be active</li>
+      <li>Little to no chance for life to survive there</li>
+      <li>Click <a href="https://solarsystem.nasa.gov/gltf_embed/2343/" target="_blank">here</a> to open 3D model</li>
+    </ul>
+
+    <br>
+    <br>
+    <!-- Fact boxes -->    
+    <h1 class="w3-wide">
+    FACTS
+    </h1>
+    
+    <div class="w3-row-padding">
+    
+    <div class="w3-col s12 w3-border w3-border-white w3-bottombar w3-leftbar w3-rightbar w3-topbar" style="background-color: MidnightBlue;">
+    <h2 class="w3-wide" style="padding: 12px;"> GLOBAL WARMING GONE WILD </h2>
+    <img src="images/venus/Space_probe_Venera_on_the_venus_surface_(artist_recreation).jpg" style="max-width: 600px;" class="responsive">
+    <p class="w3-opacity" style="font-size: small;">Image: Space probe Venera on the Venusian surface (artist recreation).</p>
+    <p align="left" style="padding: 12px;">Although it is not the closest planet to the Sun, Venus is the hottest planet in the Solar System, with a mean surface temperature of 462 °C. This is because its atmosphere is 96.5% carbon dioxide - a greenhouse gas that traps the sun's heat and does not allow it to escape from the planet. This leads to what scientists called a "runaway greenhouse effect".</p>
+    </div>
+    
+    <div class="w3-col s12 w3-border w3-border-white w3-bottombar w3-leftbar w3-rightbar" style="background-color: MidnightBlue;">
+    <h2 class="w3-wide" style="padding: 12px;"> THE GODDESS OF LOVE </h2>
+    <p align="left" style="padding: 12px;">Venus is named after the Roman goddess of love and beauty.</p>
+    </div>
+    
+    <div class="w3-col s12 w3-border w3-border-white w3-bottombar w3-leftbar w3-rightbar" style="background-color: MidnightBlue;">
+    <h2 class="w3-wide" style="padding: 12px;"> EARTH'S SISTER PLANET? </h2>
+    <p align="left" style="padding: 12px;">Venus is sometimes referred to as Earth's "sister planet" because it is similar to Earth in many respects, such as size, mass and gravity. Venus is also a similar distance away from the Sun as the Earth and it was once believed that conditions on Venus could be similar to that on Earth, with liquid water oceans, and, maybe, life. We now know that this is not the case.</p>
+    </div>
+    
+    <div class="w3-col s12 w3-border w3-border-white w3-bottombar w3-leftbar w3-rightbar" style="background-color: MidnightBlue;">
+    <h2 class="w3-wide" style="padding: 12px;"> IT IS ONE OF THE BRIGHTEST OBJECTS IN THE NIGHT SKY </h2>
+    <img src="images/venus/uranus_venus_30mar23_v2_text-5480.jpg" style="max-width: 600px;" class="responsive">
+    <p class="w3-opacity" style="font-size: small;">Image credit: Jim Bruzek. Dayton, MD, USA. <a href="https://earthsky.org/earthsky-community-photos/entry/57487/" target="_blank">EarthSky Community Photos</a>.</p>
+    <p align="left" style="padding: 12px;">Venus is so bright that it is visible to the naked eye on Earth, even during the day if it's clear and you know where to look! Venus has played an important role in human culture for as long as records have existed. Past writers and poets referred to it as the "morning star" and the "evening star" - it is the second brightest object in the night sky (after the Moon!)</p>
+    </div>
+    
+    <div class="w3-col s12 w3-border w3-border-white w3-bottombar w3-leftbar w3-rightbar" style="background-color: MidnightBlue;">
+    <h2 class="w3-wide" style="padding: 12px;"> ITS ATMOSPHERIC PRESSURE IS 90 TIMES THAT OF EARTH </h2>
+    <p align="left" style="padding: 12px;">That's roughly the same pressure you'd be subjected to if underwater on Earth at a depth of 900m (3,000 ft!)</p>
+    </div>
+    
+    <div class="w3-col s12 w3-border w3-border-white w3-bottombar w3-leftbar w3-rightbar" style="background-color: MidnightBlue;">
+    <h2 class="w3-wide" style="padding: 12px;"> IT IS SPINNING IN THE "WRONG" DIRECTION </h2>
+    <img src="images/venus/planet_tilts.webp" style="max-width: 600px;" class="responsive">
+    <p class="w3-opacity" style="font-size: small;">Image credit: James O'Donoghue / NASA.</p>
+    <p align="left" style="padding: 12px;">Unlike all the other planets in the Solar System, with the exception of Uranus, Venus spins clockwise on its axis.
+<br>
+<br>
+Earth (and most of the other planets) spin anti-clockwise on their axes. This means that, while the Sun rises in the east and sets in the west here on Earth, on Venus it would happen the other way round - the Sun would be seen to rise in the west and set in the east!</p>
+    </div>    
+    
+    </div>
+
+  <!-- Figures -->
+  <div class="div2">
+  <br>
+  
+  <h1 class="w3-wide"> FIGURES </h1>
+  <table id="figures">
+
+  <tr>
+    <td><b>Orbital period</b></td>
+    <td>224.7 Earth days</td>
+  </tr>
+    <tr>
+    <td colspan="2"> This is the time it takes for Venus to complete one orbit of the Sun. </td>
+    </tr>
+  
+  <tr>
+    <td><b>Diameter</b></td>
+    <td>12,104 km</td>
+    </tr>
+    <tr>
+    <td colspan="2">This is the distance across Venus, from one point on its surface to the opposite side.</td>
+    </tr>
+  
+    <tr>
+    <td><b>Mass</b></td>
+    <td>0.816 Earths</td>
+    </tr>
+    <tr>
+    <td colspan="2">Venus is slightly less massive than the Earth.</td>
+    </tr>
+  
+      <tr>
+    <td><b>Surface gravity</b></td>
+    <td>8.9 m/s<sup>2</sup></td>
+      </tr>
+      <tr>
+    <td colspan="2">The strength of gravity on Venus is slightly weaker, but similar to that of Earth's.</td>
+      </tr>
+  
+        <tr>
+    <td><b>Escape velocity</b></td>
+    <td>10.4 km/s</td>
+        </tr>
+        <tr>
+    <td colspan="2">This is the minimum speed a rocket launched from the surface of Venus would need in order to escape its gravity and enter into space.</td>
+    </tr>
+  
+          <tr>
+    <td><b>Number of moons</b></td>
+    <td>0</td>
+          </tr>
+          <tr>
+    <td colspan="2">Mercury and Venus are the only two planets in the Solar System that do not have any moons.</td>
+    </tr> 
+
+  </table>
+  </div>
+  
+  <!-- Life discussion -->
+  <br>
+  <h1 class="w3-wide"> LIFE ON VENUS? </h1>
+  
+  <ul>
+<li>The unforgiveable conditions on Venus - scorching surface temperatures and crushing atmospheric pressure, make its surface completely inhospitable to life as we know it.</li>
+
+<li>It is believed that Venus once had liquid water flowing on its surface and where there is water, there can be life. Indeed, Venus may once have been home to life at some point in its ancient history.</li>
+
+<img src="images/venus/1ccaa2_f605e577809c484281e4fa50e446fb18~mv2.gif" class="responsive" />
+<p><i>"Venus may have once had liquid water oceans and active volcanoes, a setting that's hospitable to life. But over time the planet got so hot the oceans boiled away. Gradually, volcanic gases created a super thick atmosphere on Venus, with clouds of sulfuric acid."
+<br>
+<br>
+Credits: Michael Lentz & Mike Mirandi/NASA's Goddard Space Flight Center.</i></p>
+
+<li>At present, the only miniscule chance of life on Venus would be not on its surface, but in the upper clouds of the planet. In particular, at a distance of around 50km from the surface the pressure becomes comparable to that on Earth (1 bar). The temperature is still hot, at around 70 °C, but survivable for <i>extremophiles</i> - microorganisms found on Earth that are known to live even in extreme conditions of temperature and pressure, hence their name.</li>
+
+<li>Such life forms would need to remain afloat in the clouds throughout their entire life - receiving protection from the Venusian surface as well as the Sun's deadly radiation. It is possible, though highly unlikely.</li>
+
+<li>If humans were to one day live on Venus, the only option would be to terraform the planet. This means changing the planet's conditions to make them more suited to life. For example, microorganisms could be deployed to absorb carbon dioxide and release oxygen - a gas that is needed by almost all living things. But such organisms would be unable to survive the harsh conditions on Venus.</li>
+
+<li>An alternative option is to introduce certain elements that we have here on Earth to act as a 'sink' to the carbon dioxide, which certain rocks, for example, are known to do. The carbon dioxide would then stay in the substances and not re-enter the atmosphere. But unfortunately it would require a lot of material to make this happen.</li>
+
+<li>Even if we could somehow make the atmosphere safe for us to breathe, living on Venus would still be problematic. Venus's magnetosphere (the magnetic field surrounding the planet) is too weak to provide protection from <i>solar winds</i> - streams of particles that are emitted from the Sun and are harmful to humans.</li>
+
+<li>Some scientists have proposed the idea of having a 'city' above the clouds on Venus, floating somewhere in the "sweet spot" where the amount of oxygen and the temperature and pressure are more friendly to life. At first, you may think that such a city would be difficult to keep afloat. However, the dense clouds and thick atmosphere below could help to take some of the weight.</li>
+
+<li>This is all hypothetical, however, and such an idea is outside the realm of our current technology. Terraforming Venus is possible, but very difficult.</li>
+
+<li>Most people focus on establishing life in less hostile places in the Solar System, such as Mars or some moons.</li>
+  
+  </ul>
+  
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
