@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Earth</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="flickity.css" media="screen">
+<link rel="icon" type="image/x-icon" href="images/Eruptive_prominence_(captured_by_STEREO,_2010-04)_(cropped).png">
+</head>
+<body>
+<script src="flickity.pkgd.min.js"></script>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="search_for_life.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">The Search for Life</a>
+    <a href="sun.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">The Sun</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Rocky planets">Rocky planets <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="mercury.html" class="w3-bar-item w3-button">Mercury</a>
+        <a href="venus.html" class="w3-bar-item w3-button">Venus</a>
+        <a href="earth.html" class="w3-bar-item w3-button">Earth</a>
+        <a href="mars.html" class="w3-bar-item w3-button">Mars</a>
+      </div>
+    </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Gas giants">Gas giants <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="jupiter.html" class="w3-bar-item w3-button">Jupiter</a>
+        <a href="saturn.html" class="w3-bar-item w3-button">Saturn</a>
+      </div>
+    </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Ice giants">Ice giants <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="uranus.html" class="w3-bar-item w3-button">Uranus</a>
+        <a href="neptune.html" class="w3-bar-item w3-button">Neptune</a>
+      </div>
+    </div>
+            <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">More <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="dwarf_planets.html" class="w3-bar-item w3-button">Dwarf planets</a>
+        <a href="asteroids.html" class="w3-bar-item w3-button">Asteroids</a>
+        <a href="comets.html" class="w3-bar-item w3-button">Comets</a>
+        <a href="kuiper_belt.html" class="w3-bar-item w3-button">Kuiper Belt</a>
+        <a href="oort_cloud.html" class="w3-bar-item w3-button">Oort Cloud</a>
+        <a href="explanations.html" class="w3-bar-item w3-button">Explanations</a>
+        <a href="external_links.html" class="w3-bar-item w3-button">External links</a>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="search_for_life.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Search for Life</a>
+  <a href="sun.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Sun</a>  
+  <a href="rocky_planets.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Rocky planets</a>
+    <a href="gas_giants.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Gas giants</a>  
+  <a href="ice_giants.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Ice giants</a>  
+  <a href="more.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">More</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+<!-- Carousel -->
+<!-- Flickity HTML init -->
+<div class="carousel js-flickity" data-flickity='{ "autoPlay": true }'>
+
+	<!-- Image 1 -->
+  <div class="carousel-cell">
+    <img src="images/earth/The_Blue_Marble_(remastered).jpg" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3>The Blue Marble</h3>
+    	<p class="w3-justify">NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans, Public domain, via Wikimedia Commons.</p>
+    	</div>
+    </div>
+  </div>
+  
+  	<!-- Image 2 -->
+  <div class="carousel-cell">
+    <img src="images/earth/Biology-0001.jpg" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3>Biology: top right - E. coli bacteria, top left - Amanita muscaria fungus, bottom right - Oxalis pes-caprae, bottom left - Crocodylus niloticus</h3>
+    	<p class="w3-justify">MathKnight, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>, via Wikimedia Commons.</p>
+    	</div>
+    </div>
+  </div>
+  
+  	<!-- Image 3 -->
+  <div class="carousel-cell">
+    <img src="images/earth/Earth_&_Moon_from_MESSENGER.png" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3>Earth and Moon captured from MESSENGER probe at May 6, 2010.</h3>
+    	<p class="w3-justify">NASA/APL, Public domain, via Wikimedia Commons.</p>
+    	</div>
+    </div>
+  </div>  
+  
+</div>
+  
+  <!-- Main section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1500px" id="band">
+    <h1 class="w3-wide" style="font-size:60px">EARTH</h1>
+    <p class="w3-opacity"><i>Earth is the third planet from the Sun. At present, it is the only place in the Universe known to have life.</i></p>
+    
+    <br>
+    <!-- Overview -->
+    <h1 class="w3-wide">OVERVIEW</h1>
+
+    <img src="images/line_earth.png" class="responsive"/>
+
+    <br>
+    <br>
+    <div class="w3-border w3-border-white w3-bottombar w3-leftbar w3-rightbar w3-topbar" style="background-color: MidnightBlue;">
+      <h4 style="padding: 12px; letter-spacing: 1px;">
+        Sun &nbsp; &#8212; &nbsp; Mercury &nbsp; &nbsp; &#8212; &nbsp; &nbsp; Venus &nbsp; &nbsp; &#8212; &nbsp; &nbsp; <span class="blink_me">Earth</span> &nbsp; &nbsp; &#8212; &nbsp; &nbsp; Mars &nbsp; &nbsp; &#8212; &nbsp; &nbsp; Jupiter &nbsp; &nbsp; &#8212; &nbsp; &nbsp; Saturn &nbsp; &nbsp; &#8212; &nbsp; &nbsp; Uranus &nbsp; &#8212; &nbsp; Neptune
+      </h4>
+      </div>
+
+    <ul>
+      <li>Third planet from the Sun. Third of the four rocky planets (Mercury, Venus, Earth, Mars)</li>
+      <li>Only place we know of so far where life exists</li>
+      <li>Only planet with liquid water on its surface. Water covers more than 70% of the surface, making it an "ocean planet"</li>
+      <li>Atmosphere mostly nitrogen (78%) and oxygen (21%) - perfect for us to breathe and live</li>
+      <li>Surface very geologically active - mountains, valleys, canyons, etc.</li>
+      <li>Click <a href="https://solarsystem.nasa.gov/gltf_embed/2393/" target="_blank">here</a> to open 3D model</li>
+    </ul>
+
+    <br>
+    <br>
+    <!-- Fact boxes -->    
+    <h1 class="w3-wide">
+    FACTS
+    </h1>
+    
+    <div class="w3-row-padding">
+    
+    <div class="w3-col s12 w3-border w3-border-white w3-bottombar w3-leftbar w3-rightbar w3-topbar" style="background-color: MidnightBlue;" style="height: 700px">
+    <h2 class="w3-wide"> ONE OF A KIND </h2>
+    <img src="images/earth/Burgess_Shale_Biota_animation_004819-005919_cropped_gif.gif" style="max-width: 500px;" class="responsive">
+    <p class="w3-opacity" style="font-size: small;">Image credit: James St. John, <a href="https://creativecommons.org/licenses/by/2.0/deed.en" target="_blank">CC BY 2.0 Deed</a>.</p>
+    <p align="left">Earth is the only place that we currently know has life in the Universe. Earth is home to a wide and diverse variety of life forms ranging from simple single-celled organisms to complex life forms such as human beings. Despite this, there is a very high probability of life existing elsewhere in the Universe (even in our own galaxy, The Milky Way, alone!) leading to the famous Fermi paradox.</p>
+    </div>
+    
+    <div class="w3-col s12 w3-border w3-border-white w3-bottombar w3-leftbar w3-rightbar" style="background-color: MidnightBlue;" style="height: 700px">
+    <h2 class="w3-wide"> PROTECTIVE FIELDS AND GASES </h2>
+    <img src="images/earth/640px-A_solar_wind_streams_flowing_from_small_coronal_holes_hit_Earth's_magnetic_field.jpg" style="max-width: 500px;" class="responsive">
+    <p class="w3-opacity" style="font-size: small;">Image: Solar wind streams flowing from small coronal holes hit Earth's magnetic field. Credit: NASA.</p>
+    <p align="left">Resulting from convection currents of molten iron and nickel in its outer core, Earth has a powerful magnetic field circling the planet. It shields life on Earth from solar winds - deadly streams of particles emitted from the Sun. It is these particles, and the way they interact with our magnetic field, that create the auroras (Northern and Southern lights) on Earth. Earth's atmosphere also has the right composition for life to exist and flourish.</p>
+    </div>
+    
+    <div class="w3-col s12 w3-border w3-border-white w3-bottombar w3-leftbar w3-rightbar" style="background-color: MidnightBlue;" style="height: 700px">
+    <h2 class="w3-wide"> THE ONLY PLANET NOT NAMED AFTER A GOD </h2>
+    <p align="left">Earth is the only planet in the Solar System that was not named after a God from Greek or Roman mythology. The name Earth is believed to have come from the Old English and Germanic word for "ground".</p>
+    </div>
+    
+    <div class="w3-col s12 w3-border w3-border-white w3-bottombar w3-leftbar w3-rightbar" style="background-color: MidnightBlue;" style="height: 700px">
+    <h2 class="w3-wide"> IT WAS ONCE THOUGHT TO BE THE CENTRE OF THE UNIVERSE </h2>
+    <p align="left">Referred to in astronomy as the "geocentric" (earth-centred) model, this was the prevailing belief for thousands of years. As viewed from Earth, the stars in the night sky seem to be fixed as if they have been projected onto a "celestial sphere" with Earth at the centre of the sphere. The Earth also seems to be unmoving from our perspective. The title of the first person to reject the geocentric model is often credited to Polish astronomer Nicolaus Copernicus, however a Sun-centered model of the Solar System was proposed as far back as 200 B.C. by Aristarchus of Samos (an Ancient Greek astronomer). Today we know that Earth has no special place in the Universe.</p>
+    </div>
+    
+    <div class="w3-col s12 w3-border w3-border-white w3-bottombar w3-leftbar w3-rightbar" style="background-color: MidnightBlue;" style="height: 700px">
+    <h2 class="w3-wide"> ITS ROTATION IS GRADUALLY SLOWING </h2>
+    <p align="left">The rotation of Earth around its own axis appears to be slowing down as time goes on! That means that a day on Earth was shorter in the past than it is today.
+	<br>
+	<br>
+	Scientists estimate that a day on Earth a century (100 years) ago was about 1.7 miliseconds (1.7 thousandths of a second) shorter than it is today. A day on Earth during the age of the Dinosaurs would only have been about 22.5 hours long. This is believed to be caused by the Moon affecting (slowing down) the Earth's rotation.
+	</p>
+    </div>
+    
+    <div class="w3-col s12 w3-border w3-border-white w3-bottombar w3-leftbar w3-rightbar" style="background-color: MidnightBlue;" style="height: 700px">
+    <h2 class="w3-wide"> IT IS THE DENSEST PLANET IN THE SOLAR SYSTEM </h2>
+    <p align="left">At 5.51 g/cm^3, Earth has a similar density to the other rocky planets, with the exception of Mars (whose average density is slightly lower, at 3.93 g/cm^3).
+<br>
+<br>
+Density is a measure of the mass (which can be thought of as the amount of material) contained within a given volume (the mass/volume ratio). A heavy metallic ball, for example, has a larger density than a soft, sponge ball of equal volume.
+</p>
+    </div>    
+    
+    </div>
+
+  <!-- Figures -->
+  <div class="div2">
+  <br>
+  
+  <h1 class="w3-wide"> FIGURES </h1>
+  <table id="figures">
+
+  <tr>
+    <td><b>Orbital period</b></td>
+    <td>365.2 Earth days</td>
+  </tr>
+  <tr>
+    <td colspan="2">This is the time it takes for Earth to complete one orbit of the Sun. It's what we call 1 year on Earth!</td>
+  </tr>
+  
+  <tr>
+    <td><b>Diameter</b></td>
+    <td>12,756 km</td>
+  </tr>
+  <tr>
+    <td colspan="2">This is the distance across Earth, from one point on its surface to the opposite side.</td>
+  </tr>
+  
+    <tr>
+    <td><b>Mean surface temperature</b></td>
+    <td>15 °C</td>
+    </tr>
+    <tr>
+    <td colspan="2">This is a very hospitable temperature to life as we know it.</td>
+    </tr>
+  
+      <tr>
+    <td><b>Surface gravity</b></td>
+    <td>9.8 m/s<sup>2</sup></td>
+      </tr>
+      <tr>
+    <td colspan="2">The human body is adapted to survive at this gravity. Astronauts in micro-gravity (an environment where they experience weightlessness) risk losing muscle and bone mass, which can negatively impact their physical health.</td>
+  </tr>
+
+        <tr>
+    <td><b>Escape velocity</b></td>
+    <td>11.2 km/s</td>
+        </tr>
+        <tr>
+    <td colspan="2">This is the minimum speed a rocket launched from the surface of Earth would need in order to escape its gravity and enter into space.</td>
+        </tr>
+  
+          <tr>
+    <td><b>Number of moons</b></td>
+    <td>1</td>
+          </tr>
+          <tr>
+    <td colspan="2">Earth has only 1 natural satellite. Our Moon is believed to have originated from the debris left over from a giant impact between Earth and another hypothetical planet named "Theia" in the early Solar System.</td>
+          </tr>
+
+  </table>
+  </div>
+  
+  <!-- Life discussion -->
+  <br>
+  <br>
+  <h1 class="w3-wide"> LIFE ON EARTH AND THE FUTURE OF HUMANITY </h1>
+  
+  <ul>
+<li>Our home planet is the only place in the Universe we know to contain life of any form. We don't know whether or not life exists elsewhere, but scientists are always trying to find signs that it does (or, at least, could!)</li>
+
+<li>Life on Earth (despite being threatened and, at times, almost completely wiped out, over the course of our planet's history) has evolved over billions of years to create the beautiful, biologically diverse planet we inhabit today.</li>
+
+<li>The conditions on Earth are not the same as they are on other planets in the Solar System (or indeed on most other planets in other solar systems – so-called ‘exoplanets’) but they are just right for life to exist. It turns out that Earth is just the right distance away from the Sun for liquid water to exist on its surface (it exists in what scientists call the ‘Goldilocks zone’). Any further away and the water would freeze into ice. Any closer and the sun’s heat would cause it to boil away. Liquid water is an essential ingredient for life as we know it. Without water, there is no life. And where there is water, there is always a possibility of life!</li>
+
+<li>Our planet has an atmosphere with oxygen – a gas needed by almost all living things, and gravity strong enough to hold onto it. Our atmosphere has an ozone layer which protects us against harmful UV (ultraviolet rays) from the Sun. A powerful magnetosphere (a magnetic field surrounding the planet) protects us from blasts of deadly radiation from the Sun. Our planet is remarkable. Yet we seem to have no special place in the Universe.</li>
+  
+<li>The possibility (and indeed probability) for the existence of life elsewhere in the Universe has undoubtedly captured the imaginations of humans for as long as we have been around. Ever since we started to use radio waves for communication in the early 1900s, we have pointed our telescopes and our receivers at the stars in the hope of finding other companions throughout the cosmos.</li>
+
+<li>To date, we have found no hard evidence for the existence of life outside of Earth; though our search has become increasingly sophisticated, not to mention humbling. Are we alone in the Universe? Maybe. But according to the SETI (search for extra-terrestrial intelligence) Institute, the number of potentially habitable planets in our galaxy alone (which is just one of hundreds of billions in the known Universe) is close to one hundred billion (100,000,000,000). That’s one hundred thousand million. Such a number is extremely difficult for the human mind to comprehend. It is not unreasonable, then, to imagine that even just a tiny fraction of that number could be home to intelligent beings, like us humans. Many may have lived and thrived well before humans on Earth and could be capable of interstellar travel (travel between the stars). But so far we have heard nothing. No messages, no visits to Earth – neither from alien beings nor their probes. This lack of evidence for the existence of other civilisations despite the incredible probability of their existence is referred to as the Fermi paradox, named after the Italian-American physicist Enrico Fermi.</li>
+
+<li>Though we are yet to hear anything back as of the present, humans have sent a few messages into space in an attempt to make contact with life elsewhere, or at the least inform them of our existence and location. In 1974, the ‘Arecibo’ message was sent to M13 – a star cluster located around 22,000 light years from Earth. 1 light year is the distance travelled by light in a time of 1 year – it’s about 63,000 times the Sun-Earth distance. The message contains information such as the numbers 1 to 10, the atomic numbers of basic chemical elements like hydrogen, carbon and nitrogen, the structure of DNA, a graphical figure of an average-sized human male and female and a graphical depiction of the Solar System, indicating which planet the message came from.</li>
+
+<li>Of course, the messages are not written in English, nor in any other language of human invention for that matter. They must be written in a language that can be understood throughout the Universe – mathematics. The messages, which are in the form of symbolic representations, must be decoded before their meaning can be deduced, though any intelligent life-form should have the capability of doing this.</li>
+
+<li>The Arecibo message was not the only attempt to communicate with aliens. Since then, the Voyager space probes (Voyagers 1 and 2, both launched in 1977) both carried ‘The Golden Record’ – a small metallic record containing sounds and images selected to illustrate life and culture on Earth. The sounds include recordings of humans talking in a number of different languages, greetings, popular music from the time, as well as various animal sounds. Printed on the record are instructions for how to play it, in addition to depictions (similar to those in the Arecibo message) of a map of the Solar System, Earth, the hydrogen atom, and so on.</li>
+
+<li>Opinions over whether or not it was wise of our species to send such messages into space remain divided, but most agree that receiving communication from outsiders would have serious implications for humanity and our place in the Universe.</li>
+
+<li>Life on Earth at present is comfortable. Our home is teeming with life of various and often wonderful forms. But our future is at question. As humans we face many risks that could one day make us an extinct race – global warming, overpopulation, biology (e.g. viruses), celestial events (e.g. asteroid collisions or gamma-ray bursts), tectonic events, volcanic activity. Not to mention nuclear and biological warfare.</li>
+
+<li>Even if we survive well into the future and are not wiped out by any of the above, we will still need to relocate and cannot stay on the Earth. The reason for this is that our Sun, like other stars, doesn’t stay the same forever, but instead goes through a life cycle consisting of various phases. Scientists estimate that the Sun is currently about half-way through its 10-billion-year life cycle. Billions of years from now, the sun’s outer layers will expand into space and eventually engulf our home planet. Our oceans of liquid water will boil away long before then, and the conditions will become unsuitable for life. The only chance of a future is for us to establish life elsewhere. Where exactly? You may ask.</li>
+
+<li>There are a number of promising locations in our solar system – planets and their moons, that could one day be colonised by humans. It is not possible to do this with our current technology, but it may well be in the future. Elon Musk, founder of SpaceX, has claimed that he’ll send a million people to Mars by the year 2050, and NASA also have plans to colonise our planetary neighbour in the not-so-distant future. Why be limited to our own Solar System? Is there a possibility of humans travelling to other stars in the future? Yes – but it’s very unlikely. This time not so much due to a lack of our technology, but rather due to the mind-boggling scale of the Universe. The nearest star to Earth (apart from the Sun!) is located 4.2 light years away. That means that it takes light – the fastest thing in the Universe – a time of 4.2 years just to travel between the Earth and our nearest star. </li>
+
+<li>And what’s more is that light is not only the fastest thing in the Universe, it also sets the cosmic speed limit. The laws of physics state that nothing inside the Universe can travel at a speed greater than the speed of light. Even if we could travel at 1% of that speed (around 67 million miles per hour, which is still well outside the realm of current technology) it would take over 400 years to get there. A person setting out in the year 1620 (around 20 years before Isaac Newton was born) on a futuristic spaceship that was capable of travelling at that speed would only have reached Proxima Centauri (our nearest star) in the year 2020. And if they left the star today, they would not get back home until the year 2422.</li>
+  
+  </ul>
+  
+  <!-- Pale blue dot -->
+  <br>
+  <h1 class="w3-wide">PALE BLUE DOT</h1>
+  <p>The image you see here was taken by the Voyager 1 space probe at a distance from Earth of about 6 billion kilometres (40 times the Earth-Sun distance). The well known Carl Sagan, an American astronomer and science communicator (1934-1996), famously made the following comment regarding the photograph.</p>
+  <img src="images/earth/Pale_Blue_Dot.png" class="responsive" style="max-width: 500px;"/>
+  <br>
+  <p><i>
+  Look again at that dot. That's here. That's home. That's us. On it, everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every "superstar," every "supreme leader," every saint and sinner in the history of our species lived there - on a mote of dust suspended in a sunbeam.
+  <br>
+  <br>
+  The Earth is a very small stage in a vast cosmic arena. Think of the rivers of blood spilled by all those generals and emperors so that, in glory and triumph, they could become the momentary masters of a fraction of a dot. Think of the endless cruelties visited by the inhabitants of one corner of this pixel on the scarcely distinguishable inhabitants of some other corner, how frequent their misunderstandings, how eager they are to kill one another, how fervent their hatreds.
+<br>
+<br>
+Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+<br>
+<br>
+The Earth is the only world known so far to harbor life. There is nowhere else, at least in the near future, to which our species could migrate. Visit, yes. Settle, not yet. Like it or not, for the moment the Earth is where we make our stand.
+<br>
+<br>
+It has been said that astronomy is a humbling and character-building experience. There is perhaps no better demonstration of the folly of human conceits than this distant image of our tiny world. To me, it underscores our responsibility to deal more kindly with one another, and to preserve and cherish the pale blue dot, the only home we've ever known.
+  </p></i>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
