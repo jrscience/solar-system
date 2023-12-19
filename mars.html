@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mars</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="flickity.css" media="screen">
+<link rel="icon" type="image/x-icon" href="images/Eruptive_prominence_(captured_by_STEREO,_2010-04)_(cropped).png">
+</head>
+<body>
+<script src="flickity.pkgd.min.js"></script>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="search_for_life.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">The Search for Life</a>
+    <a href="sun.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">The Sun</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Rocky planets">Rocky planets <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="mercury.html" class="w3-bar-item w3-button">Mercury</a>
+        <a href="venus.html" class="w3-bar-item w3-button">Venus</a>
+        <a href="earth.html" class="w3-bar-item w3-button">Earth</a>
+        <a href="mars.html" class="w3-bar-item w3-button">Mars</a>
+      </div>
+    </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Gas giants">Gas giants <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="jupiter.html" class="w3-bar-item w3-button">Jupiter</a>
+        <a href="saturn.html" class="w3-bar-item w3-button">Saturn</a>
+      </div>
+    </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Ice giants">Ice giants <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="uranus.html" class="w3-bar-item w3-button">Uranus</a>
+        <a href="neptune.html" class="w3-bar-item w3-button">Neptune</a>
+      </div>
+    </div>
+            <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">More <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="dwarf_planets.html" class="w3-bar-item w3-button">Dwarf planets</a>
+        <a href="asteroids.html" class="w3-bar-item w3-button">Asteroids</a>
+        <a href="comets.html" class="w3-bar-item w3-button">Comets</a>
+        <a href="kuiper_belt.html" class="w3-bar-item w3-button">Kuiper Belt</a>
+        <a href="oort_cloud.html" class="w3-bar-item w3-button">Oort Cloud</a>
+        <a href="explanations.html" class="w3-bar-item w3-button">Explanations</a>
+        <a href="external_links.html" class="w3-bar-item w3-button">External links</a>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="search_for_life.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Search for Life</a>
+  <a href="sun.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">The Sun</a>  
+  <a href="rocky_planets.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Rocky planets</a>
+    <a href="gas_giants.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Gas giants</a>  
+  <a href="ice_giants.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Ice giants</a>  
+  <a href="more.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">More</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+<!-- Carousel -->
+<!-- Flickity HTML init -->
+<div class="carousel js-flickity" data-flickity='{ "autoPlay": true }'>
+
+	<!-- Image 1 -->
+  <div class="carousel-cell">
+    <img src="images/mars/OSIRIS_Mars_true_color.jpg" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3>OSIRIS image of Mars taken during voyage of ESA Rosetta spacecraft - February 2007</h3>
+    	<p class="w3-justify">ESA & MPS for OSIRIS Team MPS/UPD/LAM/IAA/RSSD/INTA/UPM/DASP/IDA, <a href="https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en" target="_blank">CC BY-SA 3.0 IGO</a>, via Wikimedia Commons.</p>
+    	</div>
+    </div>
+  </div>
+  
+  	<!-- Image 2 -->
+  <div class="carousel-cell">
+    <img src="images/mars/pia23498-16.jpg" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3>Mars 2020 Makes Tracks for the Red Planet in the Mars Yard</h3>
+    	<p class="w3-justify">Credit: NASA/JPL-Caltech. <a href="https://www.nasa.gov/image-feature/mars-2020-makes-tracks-for-the-red-planet-in-the-mars-yard" target="_blank">(Link to original article.)</a></p>
+    	</div>
+    </div>
+  </div>
+  
+  	<!-- Image 3 -->
+  <div class="carousel-cell">
+    <img src="images/mars/pia23180.jpg" />
+    <div class="overlay">
+    	<div class="text">
+    	<h3>InSight Sees Drifting Clouds on Mars</h3>
+    	<p class="w3-justify">Image Credit: NASA. <a href="https://www.nasa.gov/image-feature/insight-sees-drifting-clouds-on-mars" target="_blank">(Link to original article.)</a></p>
+    	</div>
+    </div>
+  </div>  
+  
+</div>
+  
+  <!-- Main section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1500px" id="band">
+    <h1 class="w3-wide" style="font-size:60px">MARS</h1>
+    <p class="w3-opacity"><i>Mars is the fourth planet from the Sun. It is the second smallest planet in the Solar System, with a dry and barren landscape.</i></p>
+    
+    <br>
+    <!-- Overview -->
+    <h1 class="w3-wide">OVERVIEW</h1>
+
+    <img src="images/line_mars.png" class="responsive"/>
+
+    <br>
+    <br>
+    <div class="w3-border w3-border-white w3-bottombar w3-leftbar w3-rightbar w3-topbar" style="background-color: MidnightBlue;">
+      <h4 style="padding: 12px; letter-spacing: 1px;">
+        Sun &nbsp; &#8212; &nbsp; Mercury &nbsp; &nbsp; &#8212; &nbsp; &nbsp; Venus &nbsp; &nbsp; &#8212; &nbsp; &nbsp; Earth &nbsp; &nbsp; &#8212; &nbsp; &nbsp; <span class="blink_me">Mars</span> &nbsp; &nbsp; &#8212; &nbsp; &nbsp; Jupiter &nbsp; &nbsp; &#8212; &nbsp; &nbsp; Saturn &nbsp; &nbsp; &#8212; &nbsp; &nbsp; Uranus &nbsp; &#8212; &nbsp; Neptune
+      </h4>
+      </div>
+
+    <ul>
+      <li>Fourth planet from the Sun. Fourth of the four rocky planets (Mercury, Venus, Earth, Mars)</li>
+      <li>Second smallest planet in the Solar System - only about 15% as large as Earth</li>
+      <li>Barren landscape - resembles a desert on Earth</li>
+      <li>Very thin atmosphere</li>
+      <li>Like Earth, Mars has seasons, polar ice caps, volcanoes, canyons, and weather (e.g. dust storms)</li>
+      <li>May once have had liquid water oceans just like on Earth</li>
+      <li>Known as the "Red Planet" due to iron compounds in the soil (the same responsible for rust on Earth)</li>
+      <li>One of the most explored bodies in the Solar System</li>
+      <li>Chance for life to survive there</li>
+      <li>Click <a href="https://solarsystem.nasa.gov/gltf_embed/2372/" target="_blank">here</a> to open 3D model</li>
+    </ul>
+
+    <br>
+    <br>
+    <!-- Fact boxes -->    
+    <h1 class="w3-wide div2">
+    FACTS
+    </h1>
+    
+    <div class="w3-row-padding">
+    
+    <div class="w3-col s12 w3-border w3-border-white w3-bottombar w3-leftbar w3-rightbar w3-topbar" style="background-color: MidnightBlue;">
+    <h2 class="w3-wide" style="padding: 12px;"> A WATERY PAST? </h2>
+    <img src="images/mars/gale_lake.jpg" style="max-width: 500px;" class="responsive">
+    <p class="w3-opacity" style="font-size: small;">Image: Rendering of Gale Lake some 3.5 billion years ago, when Mars was warmer and much wetter. Credit: <a href="https://astrobiology.nasa.gov/news/the-ancient-mars-water-story-updated/" target="_blank">NASA</a>.</p>
+    <p align="left" style="padding: 12px;">Evidence suggests that Mars used to have liquid water (and possibly oceans) flowing on its surface. This means that life of some form may also have existed on Mars at some point within the planet's history.
+	<br>
+	<br>
+	Today, water on Mars is present in the form of frozen ice caps at the poles. The polar 'ice' is believed to contain a mixture of mainly 'dry ice' (frozen carbon dioxide) and water ice.
+	</p>
+    </div>
+    
+    <div class="w3-col s12 w3-border w3-border-white w3-bottombar w3-leftbar w3-rightbar" style="background-color: MidnightBlue;">
+    <h2 class="w3-wide" style="padding: 12px;"> IT HAS THE LARGEST VOLCANO IN THE SOLAR SYSTEM </h2>
+    <img src="images/mars/Olympus_Mons_alt.jpg" style="max-width: 400px;" class="responsive">
+    <p class="w3-opacity" style="font-size: small;">Image: A composite Viking orbiter image of Olympus Mons on Mars, the tallest known volcano and mountain in the Solar System. Credit: NASA.</p>
+    <p align="left" style="padding: 12px;">Named Olympus Mons, this volcano is over 21km (13.6 miles) tall! That's approximately 2.5 times the height of Mount Everest above sea level - the tallest mountain here on Earth.
+	<br>
+	<br>
+	Like all others on the planet's surface, it is an inactive volcano, though whether it is extinct or is simply lying dormant is still uncertain. It could erupt at any time!
+	</p>
+    </div>
+    
+    <div class="w3-col s12 w3-border w3-border-white w3-bottombar w3-leftbar w3-rightbar" style="background-color: MidnightBlue;">
+    <h2 class="w3-wide" style="padding: 12px;"> THE GOD OF WAR </h2>
+    <p align="left" style="padding: 12px;">Mars is named after the Roman god of war. In Roman mythology, Mars was an important military god.</p>
+    </div>
+    
+    <div class="w3-col s12 w3-border w3-border-white w3-bottombar w3-leftbar w3-rightbar" style="background-color: MidnightBlue;">
+    <h2 class="w3-wide" style="padding: 12px;"> THE RED PLANET </h2>
+    <p align="left" style="padding: 12px;">Mars is commonly referred to as the Red Planet because of the presence of iron compounds such as iron oxide in the soil, which give it a reddish-brown tint.
+	<br>
+	<br>
+	These same compounds are responsible for rust that we see on Earth, where goods made out of iron rust when exposed to oxygen and moisture over time.
+	</p>
+    </div>
+    
+    <div class="w3-col s12 w3-border w3-border-white w3-bottombar w3-leftbar w3-rightbar" style="background-color: MidnightBlue;">
+    <h2 class="w3-wide" style="padding: 12px;"> PIECES OF MARS EXIST ON EARTH </h2>
+    <p align="left" style="padding: 12px;">Every now and then, an impact event such as an asteroid colliding with the Martian surface causes small pieces of rock and debris to get ejected from Mars and enter into interplanetary space (the space between the planets). Some then end up on Earth as a meteorite.
+	<br>
+	<br>
+	By studying these meteorites, scientists can learn more about the environment on Mars without having to send space missions there.
+	</p>
+    </div>
+    
+    <div class="w3-col s12 w3-border w3-border-white w3-bottombar w3-leftbar w3-rightbar" style="background-color: MidnightBlue;">
+    <h2 class="w3-wide" style="padding: 12px;"> IT HAS THE LARGEST DUST STORMS IN THE SOLAR SYSTEM </h2>
+    <img src="images/mars/Mars_Before_and_After_Dust_Storm_-_PIA22487.gif" style="max-width: 500px;" class="responsive">
+    <p class="w3-opacity" style="font-size: small;">Image: Side-by-side movies shows how dust has enveloped the Red Planet, courtesy of the Mars Color Imager (MARCI) camera onboard NASA's Mars Reconnaissance Orbiter (MRO). Credit: NASA.</p>
+    <p align="left" style="padding: 12px;">One that occurred between May and September of 2018 was the largest ever recorded and was seen to circle the entire planet!</p>
+    </div>    
+    
+    </div>
+
+  <!-- Figures -->
+  <div class="div2">
+  <br>
+  
+  <h1 class="w3-wide"> FIGURES </h1>
+  <table id="figures">
+
+  <tr>
+    <td><b>Orbital period</b></td>
+    <td>687.0 Earth days</td>
+    </tr>
+    <tr>
+    <td colspan="2">This is the time it takes for Mars to complete one orbit of the Sun. A year on Mars works out to be around 1.88 Earth years.</td>
+    </tr>
+  
+  <tr>
+    <td><b>Diameter</b></td>
+    <td>6,792 km</td>
+  </tr>
+  <tr>
+    <td colspan="2">This is the distance across Mars, from one point on its surface to the opposite side.</td></tr>
+  
+    <tr>
+    <td><b>Mean surface temperature</b></td>
+    <td>-65 °C</td>
+    </tr>
+    <tr>
+    <td colspan="2">Notice the minus sign - that's a lot cooler than the toasty figure of (+)15 °C on Earth!</td></tr> 
+  
+      <tr>
+    <td><b>Surface gravity</b></td>
+    <td>3.7 m/s<sup>2</sup></td>
+      </tr>
+      <tr>
+    <td colspan="2">The strength of gravity on Mars is weaker than that on Earth. As a result, you would be able to jump around 2.6 times higher on the Martian surface than on Earth's!</td>
+      </tr>
+
+        <tr>
+    <td><b>Escape velocity</b></td>
+    <td>5.0 km/s</td>
+    </tr>
+    <tr>
+    <td colspan="2">This is the minimum speed a rocket launched from the surface of Mars would need in order to escape its gravity and enter into space.</td></tr>
+  
+          <tr>
+    <td><b>Number of moons</b></td>
+    <td>2</td>
+          </tr>
+          <tr>
+    <td colspan="2">Mars has two small, irregularly-shaped moons, named Phobos and Deimos.</td></tr>
+
+  </table>
+  </div>
+  
+  <!-- Life discussion -->
+  <br>
+  <h1 class="w3-wide"> LIFE ON MARS? </h1>
+  
+  <ul>
+<li>If there is one place in the Solar System on which the possible existence of life has attracted the most attention and captured people’s imaginations, it is Mars by a mile.</li>
+
+<li>In the early 20th century, inventor Nikola Tesla claimed to be receiving radio signals coming from Mars. Around the same time, American astronomer Percival Lowell produced intricate drawings depicting "canals" on the Martian surface.</li>
+
+<li>Since canals are man-made, this popularised the belief at the time that Mars was home to intelligent life forms.</li>
+
+<li>British author H. G. Wells would go on to write <i>The War of the Worlds</i>, a work of science fiction in which humans on Earth are invaded by alien beings from Mars.</li>
+
+<li>Second to Earth, Mars is perhaps one of the most hospitable places to life in the Solar System. Its surface largely resembles a desert, with a dry, rocky landscape. It is a cold place as it is further from the Sun than Earth, though temperatures at the equator can reach a high of around 20° C during the summer (Mars has seasons, just like on Earth, owing to the fact that the planet is tilted on its axis) which would be comfortable even to humans. It has an atmosphere containing a very small percentage (0.17%) of oxygen, though it is very thin - too thin for us to breathe.</li>
+
+<li>Mars also has a similar rotation period to Earth – meaning it takes Mars almost the same amount of time to rotate around its own axis as it does for the Earth, so the length of a day on Mars is similar (just 37 minutes longer) to that on Earth.</li>
+
+<li>But Mars is no safe haven. Its surface is constantly bombarded by streams of energetic particles emitted from the Sun (known as solar winds). These are deadly to humans because they have the ability to alter the structure of our DNA and can cause cancer. </li>
+
+<li>Fortunately, Earth has a strong magnetic field surrounding the planet which protects us against these particles, but the magnetic field surrounding Mars is much weaker and cannot offer the same protection. It is believed that solar winds have stripped away the Martian atmosphere over time, which explains why it is so thin today.</li>
+
+<li>On Earth, our atmosphere also contains an ozone layer which protects us against UV (ultraviolet) rays from the Sun. We can’t see UV rays with our eyes, but they are energetic emissions from the Sun that again have the ability to interfere with our DNA and can cause cancer. Most UV rays that strike the Earth are absorbed by the ozone layer, but a small percentage make it through and still pose a risk to humans, which is why sunscreen needs to be worn while out in the Sun on a hot summer’s day. The lack of a substantial atmosphere on Mars on the other hand provides little to no protection against UV rays.</li>
+
+<li>Evidence suggests that Mars was once a more hospitable place to life. Like Venus, it may once have had oceans of liquid water flowing on its surface billions of years ago. But as the planet has cooled and its atmosphere has become thinner, the water has frozen into ice and, in small quantities, sublimed to become water vapour in the Martian atmosphere. Sublimation is the process where a solid turns straight into a gas under the right conditions, without needing to exist as a liquid first.</li>
+
+<li>The image below shows an artist's impression of what water on the surface of an ancient Mars might have looked like:</li>
+<img src="images/mars/AncientMars.jpg" class="responsive" style="max-width: 500px"/>
+<p><i>What ancient mars may have looked like billions of years ago. It's based on MOLA data. The elevations have been updated so the shore lines will closely approximate their ancient locations. Also any mountains less than two billion years old have been removed. Ittiz, <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank">CC BY-SA 3.0</a>, via Wikimedia Commons.
+</i></p>
+
+<li>Though there is currently a lack of hard evidence, many scientists believe that life may have existed on Mars at some point in its ancient past. It may even exist there today, in the form of simple microorganisms that could survive in liquid water trapped in rocks or underground.</li>
+
+<li>One of the best pieces of evidence for the existence of life on Mars in the past is the meteorite ALH84001, discovered in Antarctica during a scientific expedition in the 1980s. Believed to have originated from Mars, there is evidence that ALH84001 contains microscopic residues of bacteria-like life – a sort of “microscopic fossil” which would suggest that such life existed on Mars before ALH84001 left its surface some 16 million years ago.</li>
+
+<li>If humans were to live on Mars in the future, it would need to be terraformed. Terraforming a planet means changing the conditions on the planet in order to make them more suitable for life. It has been suggested that detonating hydrogen bombs at the poles of Mars could cause the ice there to melt, reintroducing liquid water onto the surface. Greenhouse gases (gases that absorb the sun’s heat and prevent it from escaping into space) could be released to heat up the planet and microorganisms could be deployed onto the surface to start absorbing carbon dioxide in the Martian atmosphere and replacing it with more oxygen. A base for humans could be built and crops could be grown to sustain a future civilisation. Mars is also one of Earth’s closest neighbours, so it could be the best chance we have of colonising another world in our Solar System.</li>
+
+<li>Achieving a goal such as establishing a colony on Mars seriously pushes the limit of our current technology but does not lie completely outside it. NASA already have plans to send humans to Mars by the 2030s!</li>
+  
+  </ul>
+  
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
